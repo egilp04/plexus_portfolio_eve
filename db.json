@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Juan Jesus",
+      "email": "juan_jesus@mail.com",
+      "token": "JJ-token",
+      "password": "456",
+      "rol": "usuario"
+    },
+    {
+      "id": 2,
+      "name": "Eve",
+      "email": "eve@mail.com",
+      "password": "123",
+      "token": "eve-token",
+      "rol": "admin"
+    }
+  ]
+}
