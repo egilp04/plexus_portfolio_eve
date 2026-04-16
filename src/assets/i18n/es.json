@@ -1,0 +1,12 @@
+{
+  "NAV": {
+    "HOME": "Inicio",
+    "ABOUT": "Sobre mí"
+  },
+  "PAGES": {
+    "ABOUT": {
+      "TITLE": "",
+      "DESCRIPTION": "De las lenguas a la lógica. Soy una Traductora e Intérprete reconvertida en Desarrolladora Web, fusionando la precisión lingüística con la arquitectura digital."
+    }
+  }
+}

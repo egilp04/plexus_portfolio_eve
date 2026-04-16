@@ -1,7 +1,15 @@
-<div class="card flex justify-center">
-  <p-menu [model]="items"></p-menu>
+<div class="navbar">
+  <p-menu [model]="items">
+    <ng-template pTemplate="item" let-item>
+      <span>
+        {{ item.label | translate }}
+      </span>
+    </ng-template>
+  </p-menu>
+
   <div class="lang-switch">
     <button (click)="changeLang('es')">ES</button>
     <button (click)="changeLang('en')">EN</button>
+    <button (click)="changeLang('de')">DE</button>
   </div>
 </div>

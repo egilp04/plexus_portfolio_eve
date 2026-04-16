@@ -1,0 +1,12 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About me"
+  },
+  "PAGES": {
+    "ABOUT": {
+      "TITLE": "",
+      "DESCRIPTION": "From languages to logic. I am a Translator and Interpreter turned Web Developer, fusing linguistic precision with digital architecture."
+    }
+  }
+}

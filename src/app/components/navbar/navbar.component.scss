@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-30);
+
+  margin-top: var(--margin-40);
+}
+
+.lang-switch {
+  display: flex;
+  gap: var(--gap-10);
+}
+
+.lang-switch button {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+
+  color: var(--color-primary);
+  font-family: var(--font-Poppins);
+  font-size: var(--font-label-sm);
+
+  padding: var(--padding-6) var(--padding-12);
+  border-radius: var(--border-radius-input);
+
+  opacity: 0.7;
+  cursor: pointer;
+
+  transition:
+    opacity 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.lang-switch button:hover {
+  opacity: 1;
+  background-color: var(--color-primary);
+  color: var(--color-base);
+}
+
+:host ::ng-deep .p-menu {
+  background: transparent;
+  border: none;
+  width: auto;
+}
+
+:host ::ng-deep .p-menu-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-10);
+}
+
+:host ::ng-deep .p-menuitem {
+  width: auto;
+}
+
+:host ::ng-deep .p-menuitem-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-10);
+  width: fit-content;
+  padding: 0;
+  background: transparent;
+  color: var(--color-primary);
+  font-family: var(--font-Poppins);
+}

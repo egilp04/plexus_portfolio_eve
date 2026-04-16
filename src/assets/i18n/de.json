@@ -1,0 +1,12 @@
+{
+  "NAV": {
+    "HOME": "Startseite",
+    "ABOUT": "Über mich"
+  },
+  "PAGES": {
+    "ABOUT": {
+      "TITLE": "",
+      "DESCRIPTION": "Von Sprachen zur Logik. Ich bin eine Übersetzerin und Dolmetscherin, die zur Webentwicklerin wurde und linguistische Präzision mit digitaler Architektur verschmilzt."
+    }
+  }
+}

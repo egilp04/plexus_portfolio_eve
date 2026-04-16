@@ -25,15 +25,14 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.langActual.set(this.translate.getFallbackLang() ?? 'es');
+
     this.items = [
       {
-        label: 'Home',
-        icon: 'pi pi-home',
+        label: 'NAV.HOME',
         command: () => this.router.navigate(['/']),
       },
       {
-        label: 'About',
-        icon: 'pi pi-user',
+        label: 'NAV.ABOUT',
         command: () => this.router.navigate(['/about']),
       },
     ];
