@@ -7,10 +7,6 @@ export interface ProjectModel {
   company: string;
   technologies: string[];
   image: string;
-  links: {
-    github: string | null;
-    demo: string | null;
-  };
   year: number;
 }
 ``;

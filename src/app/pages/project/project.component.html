@@ -2,7 +2,9 @@
 <section class="projects-container">
   <div class="projects-grid">
     @for (item of projectsList; track item.id) {
-      <app-card [project]="item"></app-card>
+      <div #projectCard>
+        <app-card [project]="item"></app-card>
+      </div>
     } @empty {
       <p>Cargando proyectos...</p>
     }

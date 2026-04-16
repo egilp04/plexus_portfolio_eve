@@ -8,57 +8,74 @@
       "type": "fullstack",
       "company": "Plexus Tech",
       "technologies": ["Angular", "TypeScript", "SCSS", "REST API", "Chart.js"],
-      "image": "assets/projects/plexus-dashboard.png",
-      "links": {
-        "github": null,
-        "demo": null
-      },
+      "image": "assets/img/plexus-dashboard.jpg",
       "year": 2024
     },
     {
       "id": "translation-api",
       "title": "Translation Management API",
       "subtitle": "Backend Service",
-      "description": "API REST para la gestión de proyectos de traducción, usuarios y flujos de trabajo.",
+      "description": "API REST para la gestión de proyectos de traducción, asignación de lingüistas y flujos de trabajo automatizados.",
       "type": "backend",
       "company": "Freelance",
       "technologies": ["Node.js", "Express", "MongoDB", "JWT"],
-      "image": "assets/projects/translation-api.png",
-      "links": {
-        "github": "https://github.com/username/translation-api",
-        "demo": null
-      },
+      "image": "assets/img/api.jpg",
       "year": 2023
     },
     {
       "id": "portfolio",
-      "title": "Personal Portfolio",
+      "title": "Personal Portfolio V2",
       "subtitle": "Frontend Application",
-      "description": "Portfolio personal desarrollado en Angular con diseño responsive y animaciones GSAP.",
+      "description": "Portfolio interactivo multilingüe desarrollado con las últimas características de Angular (Standalone Components, Signals).",
       "type": "frontend",
       "company": "Personal",
-      "technologies": ["Angular", "GSAP", "SCSS", "Angular Material"],
-      "image": "assets/projects/portfolio.png",
-      "links": {
-        "github": "https://github.com/username/portfolio",
-        "demo": "https://your-portfolio.com"
-      },
+      "technologies": ["Angular 17+", "GSAP", "SCSS", "PrimeNG"],
+      "image": "assets/img/portfolio.png",
       "year": 2024
     },
     {
-      "id": "ecommerce",
+      "id": "ecommerce-java",
       "title": "E-commerce Platform",
       "subtitle": "Fullstack Web App",
-      "description": "Aplicación web de comercio electrónico con gestión de productos, usuarios y pedidos.",
+      "description": "Plataforma de comercio electrónico con carrito de compras, pasarela de pago simulada y panel de administración.",
       "type": "fullstack",
       "company": "Academic Project",
-      "technologies": ["Angular", "Spring Boot", "MySQL"],
-      "image": "assets/projects/ecommerce.png",
-      "links": {
-        "github": "https://github.com/username/ecommerce",
-        "demo": null
-      },
+      "technologies": ["Angular", "Spring Boot", "MySQL", "Hibernate"],
+      "image": "assets/img/ecommerce-java.jpg",
       "year": 2022
+    },
+    {
+      "id": "invoice-generator",
+      "title": "Freelance Invoice Generator",
+      "subtitle": "Micro-SaaS",
+      "description": "Generador de facturas en PDF automatizado para traductores freelance, con cálculo de impuestos según la normativa española y alemana.",
+      "type": "backend",
+      "company": "Personal",
+      "technologies": ["Node.js", "Puppeteer", "Docker"],
+      "image": "assets/img/invoice.png",
+      "year": 2024
+    },
+    {
+      "id": "weather-widget",
+      "title": "Smart Weather Dashboard",
+      "subtitle": "API Integration",
+      "description": "Dashboard meteorológico interactivo que consume la API de OpenWeatherMap, con gráficos de previsión a 7 días.",
+      "type": "frontend",
+      "company": "Personal",
+      "technologies": ["Angular", "RxJS", "OpenWeather API"],
+      "image": "assets/img/weather-widget.jpg",
+      "year": 2023
+    },
+    {
+      "id": "hr-management-system",
+      "title": "HR Management System",
+      "subtitle": "Internal Corporate Tool",
+      "description": "Módulo de gestión de vacaciones y fichajes para empleados, integrado con el Active Directory de la empresa.",
+      "type": "fullstack",
+      "company": "Plexus Tech",
+      "technologies": ["Angular", "C#", ".NET Core", "SQL Server"],
+      "image": "assets/img/hr-management-system.jpeg",
+      "year": 2024
     }
   ]
 }

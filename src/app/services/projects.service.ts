@@ -11,8 +11,6 @@ export class ProjectsService {
   private http = inject(HttpClient);
 
   getProjects(): Observable<ProjectModel[]> {
-    return this.http
-      .get<{ projects: ProjectModel[] }>(this.apiUrl)
-      .pipe(map((response) => response.projects));
+    return this.http.get<ProjectModel[]>(this.apiUrl);
   }
 }

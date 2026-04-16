@@ -9,21 +9,16 @@
   margin-top: var(--margin-20);
 }
 
-@media (min-width: 600px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (min-width: 1200px) {
   .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap-40);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-10);
   }
 }
 
 @media (min-width: 1600px) {
   .projects-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap-20);
   }
 }
