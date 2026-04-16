@@ -1,6 +1,7 @@
 .app-layout {
   display: flex;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .landing {
@@ -24,6 +25,8 @@
 .content {
   flex: 1;
   padding: var(--padding-60);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @media (max-width: 480px) {

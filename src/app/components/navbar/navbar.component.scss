@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap-30);
-
-  margin-top: var(--margin-40);
+  margin-top: var(--margin-10);
 }
 
 .lang-switch {
   display: flex;
   gap: var(--gap-10);
+  flex-wrap: wrap;
 }
 
 .lang-switch button {
@@ -27,17 +27,14 @@
 
   transition:
     opacity 0.2s ease,
-    background-color 0.2s ease;
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .lang-switch button:hover {
   opacity: 1;
   background-color: var(--color-primary);
   color: var(--color-base);
-}
-
-.navbar-items {
-  cursor: pointer;
 }
 
 :host ::ng-deep .p-menu {
@@ -62,8 +59,47 @@
   align-items: center;
   gap: var(--gap-10);
   width: fit-content;
+
   padding: 0;
   background: transparent;
+
   color: var(--color-primary);
   font-family: var(--font-Poppins);
+  font-size: var(--font-nav-sm);
+  line-height: var(--line-height-nav-sm);
+
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+:host ::ng-deep .p-menuitem-link:hover {
+  opacity: 1;
+}
+
+@media (min-width: 480px) {
+  .navbar {
+    margin-top: var(--margin-40);
+  }
+
+  :host ::ng-deep .p-menuitem-link {
+    font-size: var(--font-nav-md);
+    line-height: var(--line-height-nav-md);
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    margin-top: var(--margin-50);
+  }
+
+  :host ::ng-deep .p-menuitem-link {
+    font-size: var(--font-nav-lg);
+    line-height: var(--line-height-nav-lg);
+  }
+}
+
+@media (min-width: 1600px) {
+  .navbar {
+    margin-top: var(--margin-60);
+  }
 }

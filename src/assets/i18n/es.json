@@ -8,9 +8,28 @@
     "DASHBOARD_ADMIN": "Estadísticas"
   },
   "PAGES": {
-    "ABOUT": {
+    "LANDING": {
       "TITLE": "",
       "DESCRIPTION": "De las lenguas a la lógica. Soy una Traductora e Intérprete reconvertida en Desarrolladora Web, fusionando la precisión lingüística con la arquitectura digital."
+    },
+
+    "ABOUT": {
+      "TITLE": "Sobre mí",
+      "DESCRIPTION": "Mi paso por la University of Münster y mi formación en Córdoba me han dotado de una mentalidad global, capacidad de adaptación y un enfoque meticuloso para resolver retos complejos en equipo. Construyo puentes, ya sea entre idiomas o entre usuarios y tecnología.",
+      "TIMELINE": {
+        "MUNSTER": {
+          "DATE": "Alemania",
+          "TEXT": "Experiencia académica en la University of Münster, donde desarrollé una visión internacional y habilidades para trabajar en entornos multiculturales."
+        },
+        "CORDOBA": {
+          "DATE": "España",
+          "TEXT": "Formación universitaria en Córdoba, consolidando una base sólida en análisis, comunicación y pensamiento estructurado."
+        },
+        "NOW": {
+          "DATE": "Hoy",
+          "TEXT": "Desarrollo soluciones digitales con una perspectiva humana, conectando tecnología, diseño y experiencia de usuario."
+        }
+      }
     }
   }
 }

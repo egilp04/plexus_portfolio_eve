@@ -8,9 +8,28 @@
     "DASHBOARD_ADMIN": "Dashboard"
   },
   "PAGES": {
-    "ABOUT": {
+    "LANDING": {
       "TITLE": "",
       "DESCRIPTION": "Von Sprachen zur Logik. Ich bin eine Übersetzerin und Dolmetscherin, die zur Webentwicklerin wurde und linguistische Präzision mit digitaler Architektur verschmilzt."
+    },
+
+    "ABOUT": {
+      "TITLE": "Über mich",
+      "DESCRIPTION": "Mein Aufenthalt an der University of Münster sowie meine Ausbildung in Córdoba haben meine globale Denkweise, Anpassungsfähigkeit und einen sorgfältigen Ansatz zur Lösung komplexer Aufgaben im Team geprägt. Ich schlage Brücken – zwischen Sprachen ebenso wie zwischen Nutzerinnen und Nutzern und Technologie.",
+      "TIMELINE": {
+        "MUNSTER": {
+          "DATE": "Deutschland",
+          "TEXT": "Akademische Erfahrung an der University of Münster, die mir eine internationale Perspektive und die Arbeit in multikulturellen Kontexten ermöglichte."
+        },
+        "CORDOBA": {
+          "DATE": "Spanien",
+          "TEXT": "Universitäre Ausbildung in Córdoba mit Fokus auf Analyse, Kommunikation und strukturiertes Denken."
+        },
+        "NOW": {
+          "DATE": "Heute",
+          "TEXT": "Entwicklung digitaler Lösungen mit einem menschenzentrierten Ansatz, der Technologie, Design und Nutzererlebnis verbindet."
+        }
+      }
     }
   }
 }
