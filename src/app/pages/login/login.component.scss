@@ -1,0 +1,96 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-24);
+}
+
+/* Título */
+.page h1 {
+  font-size: var(--font-h1-sm);
+  margin-bottom: var(--margin-30);
+  color: var(--color-primary);
+  text-align: center;
+}
+
+/* ---------- FORM ---------- */
+
+.form-container {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-30);
+}
+
+/* Campos */
+.formularios-divs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-4);
+}
+
+/* Labels */
+.formularios-divs label {
+  font-size: var(--font-label-sm);
+  color: var(--color-primary);
+}
+
+/* Inputs */
+.contact-input {
+  padding: var(--padding-10);
+  border: 1px solid var(--color-disabled);
+  border-radius: var(--border-radius-input);
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+.contact-input::placeholder {
+  color: var(--color-disabled);
+}
+
+/* Mensajes de error */
+.error-text {
+  font-size: var(--font-label-sm);
+  color: var(--color-accent);
+}
+
+/* Botón */
+.form-container button {
+  margin-top: var(--margin-20);
+  padding: var(--padding-10) var(--padding-30);
+  border-radius: var(--border-radius-input);
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-base);
+  font-size: var(--font-button-md);
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  opacity: 0.9;
+}
+
+.form-container button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (min-width: 480px) {
+  .page h1 {
+    font-size: var(--font-h1-md);
+  }
+
+  .page {
+    padding: var(--padding-40);
+  }
+}
+@media (min-width: 1200px) {
+  .page h1 {
+    font-size: var(--font-h1-lg);
+  }
+
+  .page {
+    padding: var(--padding-60);
+  }
+}

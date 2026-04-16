@@ -57,6 +57,20 @@
       "BUTTON": {
         "SEND": "Daten senden"
       }
+    },
+    "LOGIN": {
+      "TITLE": "anmelden",
+      "INPUTS": {
+        "NAME": "Benutzername",
+        "PASSWORD": "Passwort"
+      },
+      "ERROR": {
+        "NAME": "Ungültiges Format des Benutzernamens. Bitte überprüfen.",
+        "PASSWORD": "Ungültiges Passwortformat. Bitte überprüfen."
+      },
+      "BUTTON": {
+        "SEND": "Anmelden"
+      }
     }
   }
 }

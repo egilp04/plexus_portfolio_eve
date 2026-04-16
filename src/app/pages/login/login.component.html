@@ -1,1 +1,57 @@
-<p>login works!</p>
+<div class="page">
+  <h1>{{ "PAGES.LOGIN.TITLE" | translate | titlecase }}</h1>
+
+  <form
+    [formGroup]="profileForm"
+    (ngSubmit)="onSubmit()"
+    class="form-container"
+  >
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>
+        {{ "PAGES.LOGIN.INPUTS.NAME" | translate }}
+      </mat-label>
+
+      <input
+        matInput
+        type="text"
+        formControlName="firstName"
+        autocomplete="username"
+      />
+
+      @if (
+        profileForm.get("firstName")?.touched &&
+        profileForm.get("firstName")?.invalid
+      ) {
+        <mat-error>
+          {{ "PAGES.LOGIN.ERROR.NAME" | translate }}
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>
+        {{ "PAGES.LOGIN.INPUTS.PASSWORD" | translate }}
+      </mat-label>
+
+      <input
+        matInput
+        type="password"
+        formControlName="password"
+        autocomplete="current-password"
+      />
+
+      @if (
+        profileForm.get("password")?.touched &&
+        profileForm.get("password")?.invalid
+      ) {
+        <mat-error>
+          {{ "PAGES.LOGIN.ERROR.NAME" | translate }}
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <button type="submit">
+      {{ "PAGES.LOGIN.BUTTON.SEND" | translate }}
+    </button>
+  </form>
+</div>

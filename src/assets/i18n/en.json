@@ -55,6 +55,21 @@
         "DIRECTION": "Check the direction format"
       },
       "BUTTON": { "SEND": "Send Data" }
+    },
+
+    "LOGIN": {
+      "TITLE": "Login",
+      "INPUTS": {
+        "NAME": "Username",
+        "PASSWORD": "Password"
+      },
+      "ERROR": {
+        "NAME": "Invalid username format. Please check and try again.",
+        "PASSWORD": "Invalid password format. Please check and try again."
+      },
+      "BUTTON": {
+        "SEND": "Log in"
+      }
     }
   }
 }

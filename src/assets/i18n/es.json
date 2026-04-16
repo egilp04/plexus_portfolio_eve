@@ -55,6 +55,18 @@
         "DIRECTION": "Comprueba el formato"
       },
       "BUTTON": { "SEND": "Enviar Datos" }
+    },
+    "LOGIN": {
+      "TITLE": "Iniciar Sesión",
+      "INPUTS": {
+        "NAME": "Usuario",
+        "PASSWORD": "Contraseña"
+      },
+      "ERROR": {
+        "NAME": "Error con el nombre de usuario, checa el formato",
+        "PASSWORD": "Error con la contraseña, chequea el formato"
+      },
+      "BUTTON": { "SEND": "Iniciar sesión" }
     }
   }
 }

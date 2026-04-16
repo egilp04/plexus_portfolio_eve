@@ -15,7 +15,7 @@
       profileForm.get("firstName")?.touched &&
       profileForm.get("firstName")?.invalid
     ) {
-      <p class="text-red-800">{{ "PAGES.CONTACT.ERROR.NAME" | translate }}</p>
+      <p>{{ "PAGES.CONTACT.ERROR.NAME" | translate }}</p>
     }
   </div>
 
@@ -35,7 +35,7 @@
       profileForm.get("lastName")?.touched &&
       profileForm.get("lastName")?.invalid
     ) {
-      <p class="text-red-800">
+      <p>
         {{ "PAGES.CONTACT.ERROR.SURNAME" | translate }}
       </p>
     }
@@ -56,12 +56,12 @@
     @if (
       profileForm.get("address")?.touched && profileForm.get("address")?.invalid
     ) {
-      <p class="text-red-800">
+      <p>
         {{ "PAGES.CONTACT.ERROR.DIRECTION" | translate }}
       </p>
     }
   </div>
-  <button type="submit" class="p-2 bg-gray-200 hover:bg-gray-300 rounded-md">
+  <button type="submit">
     {{ "PAGES.CONTACT.BUTTON.SEND" | translate }}
   </button>
 </form>

@@ -6,7 +6,6 @@ import { MenuModule } from 'primeng/menu';
 
 @Component({
   selector: 'app-navbar',
-  // Añade RouterLink y RouterLinkActive a tus imports
   imports: [MenuModule, TranslateModule, RouterLink, RouterLinkActive],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
