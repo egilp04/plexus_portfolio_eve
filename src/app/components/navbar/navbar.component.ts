@@ -1,12 +1,12 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { MenuItem } from 'primeng/api';
 import { MenuModule } from 'primeng/menu';
 
 @Component({
   selector: 'app-navbar',
-  imports: [MenuModule, RouterLink, TranslateModule],
+  imports: [MenuModule, TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
   standalone: true,
@@ -28,12 +28,28 @@ export class NavbarComponent implements OnInit {
 
     this.items = [
       {
-        label: 'NAV.HOME',
-        command: () => this.router.navigate(['/']),
-      },
-      {
         label: 'NAV.ABOUT',
         command: () => this.router.navigate(['/about']),
+      },
+      {
+        label: 'NAV.CONTACT',
+        command: () => this.router.navigate(['/contact']),
+      },
+      {
+        label: 'NAV.PROJECTS',
+        command: () => this.router.navigate(['/projects']),
+      },
+      {
+        label: 'NAV.LOGIN',
+        command: () => this.router.navigate(['/login']),
+      },
+      {
+        label: 'NAV.HOME',
+        command: () => this.router.navigate(['/home']),
+      },
+      {
+        label: 'NAV.DASHBOARD_ADMIN',
+        command: () => this.router.navigate(['/dashboard']),
       },
     ];
   }

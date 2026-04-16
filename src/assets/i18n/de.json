@@ -1,7 +1,11 @@
 {
   "NAV": {
     "HOME": "Startseite",
-    "ABOUT": "Über mich"
+    "ABOUT": "Über mich",
+    "CONTACT": "Kontakt",
+    "PROJECTS": "Projekte",
+    "LOGIN": "Anmelden",
+    "DASHBOARD_ADMIN": "Dashboard"
   },
   "PAGES": {
     "ABOUT": {
