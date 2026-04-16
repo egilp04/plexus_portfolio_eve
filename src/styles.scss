@@ -214,11 +214,11 @@ main {
 }
 
 a {
-  color: var(--color-base);
+  color: var(--color-primary);
   text-decoration: none;
 }
 a:visited {
-  color: var(--color-base);
+  color: var(--color-secondary);
 }
 a:hover {
   color: var(--color-accent);
