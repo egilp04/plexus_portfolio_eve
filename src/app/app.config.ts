@@ -9,6 +9,7 @@ import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideAnimations(),
     provideRouter(routes),
     provideHttpClient(withInterceptors([])),
     provideTranslateService({
@@ -21,3 +22,8 @@ export const appConfig: ApplicationConfig = {
     }),
   ],
 };
+function provideAnimations():
+  | import('@angular/core').Provider
+  | import('@angular/core').EnvironmentProviders {
+  throw new Error('Function not implemented.');
+}

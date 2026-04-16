@@ -4,8 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-chat-support',
   imports: [],
   templateUrl: './chat-support.component.html',
-  styleUrl: './chat-support.component.scss'
+  styleUrl: './chat-support.component.scss',
+  standalone: true,
 })
-export class ChatSupportComponent {
-
-}
+export class ChatSupportComponent {}

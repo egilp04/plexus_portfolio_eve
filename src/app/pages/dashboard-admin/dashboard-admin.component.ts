@@ -4,8 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-dashboard-admin',
   imports: [],
   templateUrl: './dashboard-admin.component.html',
-  styleUrl: './dashboard-admin.component.scss'
+  styleUrl: './dashboard-admin.component.scss',
+  standalone: true,
 })
-export class DashboardAdminComponent {
-
-}
+export class DashboardAdminComponent {}
