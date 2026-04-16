@@ -1,0 +1,36 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-base);
+}
+
+.landing {
+  flex: 0 0 40%;
+  background-color: var(--color-card);
+  padding: var(--padding-60);
+  display: flex;
+  align-items: var(--align-home);
+  justify-content: var(--justify-home);
+}
+
+.content {
+  flex: 1;
+  background-color: var(--color-primary);
+  padding: var(--padding-60);
+}
+
+@media (max-width: 480px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .landing {
+    width: 100%;
+    padding: var(--padding-24);
+  }
+
+  .content {
+    width: 100%;
+    padding: var(--padding-24);
+  }
+}
