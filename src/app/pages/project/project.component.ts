@@ -1,10 +1,11 @@
 import { Component, inject, Inject, OnInit } from '@angular/core';
 import { CardComponent } from '../../components/card/card.component';
 import { ProjectsService } from '../../services/projects.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project',
-  imports: [CardComponent],
+  imports: [CardComponent, TranslateModule],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss',
   standalone: true,
