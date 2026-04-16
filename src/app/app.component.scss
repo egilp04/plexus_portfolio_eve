@@ -48,7 +48,6 @@
     max-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: var(--padding-60);
   }
 }
 
@@ -73,12 +72,11 @@
     max-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: var(--padding-60);
   }
 }
 
 @media (min-width: 1600px) {
   .content {
-    padding: var(--padding-80);
+    padding: var(--padding-60);
   }
 }

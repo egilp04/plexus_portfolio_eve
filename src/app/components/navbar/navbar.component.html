@@ -1,9 +1,15 @@
 <div class="navbar">
   <p-menu [model]="items">
     <ng-template pTemplate="item" let-item>
-      <span class="navbar-items">
-        {{ item.label | translate }}
-      </span>
+      <a
+        [routerLink]="item.routerLink"
+        routerLinkActive="active-link"
+        class="menu-link"
+      >
+        <span class="navbar-items">
+          {{ item.label | translate }}
+        </span>
+      </a>
     </ng-template>
   </p-menu>
 

@@ -154,7 +154,6 @@ header {
   background-color: var(--color-base);
   justify-content: space-between;
   align-items: center;
-  padding: var(--padding-6) var(--padding-10) var(--padding-6) var(--padding-8);
   max-width: 100%;
   position: sticky;
   top: 0;
@@ -408,7 +407,6 @@ p {
   }
   h1 {
     font-size: var(--font-h1-sm);
-    margin-top: var(--margin-20);
   }
   .form-container {
     padding: var(--padding-20) var(--padding-60);
@@ -423,7 +421,6 @@ p {
 @media (min-width: 480px) and (max-width: 1200px) {
   h1 {
     font-size: var(--font-h1-md);
-    margin: var(--margin-20) 0 var(--margin-20) 0;
   }
 
   .form-container {

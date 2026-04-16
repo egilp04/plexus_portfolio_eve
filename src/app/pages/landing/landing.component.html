@@ -1,12 +1,16 @@
 <div class="landing-inner">
-  <section class="landing-section-1">
-    <h1>{{ "evelia gil paredes " | uppercase }}</h1>
-    <p class="subtitle">Fullstack developer</p>
-    <p>{{ "PAGES.LANDING.DESCRIPTION" | translate }}</p>
-  </section>
-  <section class="landing-section-2">
-    <app-navbar></app-navbar>
-  </section>
+  <div class="landing-section-container">
+    <section class="landing-section-1">
+      <div class="title-container">
+        <h1>{{ "evelia gil paredes " | uppercase }}</h1>
+        <p class="subtitle">Fullstack developer</p>
+      </div>
+      <p class="landing-desc">{{ "PAGES.LANDING.DESCRIPTION" | translate }}</p>
+    </section>
+    <section class="landing-section-2">
+      <app-navbar></app-navbar>
+    </section>
+  </div>
   <section class="landing-section-3 social-links">
     <a
       href="https://github.com/egilp04"

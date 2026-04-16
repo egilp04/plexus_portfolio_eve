@@ -1,22 +1,24 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router'; // <-- Importa estas dos
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { MenuItem } from 'primeng/api';
 import { MenuModule } from 'primeng/menu';
 
 @Component({
   selector: 'app-navbar',
-  imports: [MenuModule, TranslateModule],
+  // Añade RouterLink y RouterLinkActive a tus imports
+  imports: [MenuModule, TranslateModule, RouterLink, RouterLinkActive],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
   standalone: true,
 })
 export class NavbarComponent implements OnInit {
   items: MenuItem[] | undefined;
-
-  constructor(private translate: TranslateService) {}
   langActual = signal('es');
   router = inject(Router);
+
+  constructor(private translate: TranslateService) {}
+
   changeLang(lang: string) {
     const langSelec = lang;
     this.translate.use(langSelec);
@@ -25,32 +27,13 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.langActual.set(this.translate.getFallbackLang() ?? 'es');
-
     this.items = [
-      {
-        label: 'NAV.ABOUT',
-        command: () => this.router.navigate(['/about']),
-      },
-      {
-        label: 'NAV.CONTACT',
-        command: () => this.router.navigate(['/contact']),
-      },
-      {
-        label: 'NAV.PROJECTS',
-        command: () => this.router.navigate(['/projects']),
-      },
-      {
-        label: 'NAV.LOGIN',
-        command: () => this.router.navigate(['/login']),
-      },
-      {
-        label: 'NAV.HOME',
-        command: () => this.router.navigate(['/home']),
-      },
-      {
-        label: 'NAV.DASHBOARD_ADMIN',
-        command: () => this.router.navigate(['/dashboard']),
-      },
+      { label: 'NAV.ABOUT', routerLink: '/about' },
+      { label: 'NAV.CONTACT', routerLink: '/contact' },
+      { label: 'NAV.PROJECTS', routerLink: '/projects' },
+      { label: 'NAV.LOGIN', routerLink: '/login' },
+      { label: 'NAV.HOME', routerLink: '/home' },
+      { label: 'NAV.DASHBOARD_ADMIN', routerLink: '/dashboard' },
     ];
   }
 }
