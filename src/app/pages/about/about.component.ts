@@ -2,49 +2,44 @@ import {
   Component,
   AfterViewInit,
   ElementRef,
-  QueryList,
   ViewChildren,
+  QueryList,
   Inject,
   PLATFORM_ID,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [TranslateModule], // Importa tu módulo de traducciones
+  imports: [TranslateModule],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements AfterViewInit {
-  // Capturamos todos los elementos con #timelineItem
-  @ViewChildren('timelineItem') timelineItems!: QueryList<ElementRef>;
+  @ViewChildren('timelineItem') items!: QueryList<ElementRef>;
+  timelineKeys = ['CORDOBA', 'MUNSTER', 'TRANSLATION', 'WEBDEV', 'PLEXUS'];
 
-  // Inyectamos PLATFORM_ID para comprobar si estamos en el navegador
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
-  ngAfterViewInit(): void {
-    // Solo ejecutamos GSAP si estamos en el navegador (evita errores de SSR)
+  ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
-      gsap.registerPlugin(ScrollTrigger);
+      // 1. Convertimos el QueryList de Angular a un array de elementos HTML puros
+      const htmlElements = this.items.map((item) => item.nativeElement);
 
-      // Animamos cada elemento de la lista
-      this.timelineItems.forEach((item: ElementRef, index: number) => {
-        gsap.to(item.nativeElement, {
-          scrollTrigger: {
-            trigger: item.nativeElement,
-            start: 'top 85%', // La animación empieza cuando el top del elemento llega al 85% de la pantalla
-            toggleActions: 'play none none reverse', // Se reproduce al bajar, se revierte al subir
-          },
-          opacity: 1, // Pasa de opacity 0 (en tu CSS) a 1
-          y: 0, // Pasa de translateY(40px) (en tu CSS) a 0
-          duration: 0.8,
-          ease: 'power3.out',
-          delay: index * 0.15, // Crea un ligero efecto cascada si aparecen a la vez
-        });
+      // 2. Creamos un timeline de GSAP.
+      // Le ponemos un pequeño delay de medio segundo para que la página termine de cargar antes de empezar.
+      const tl = gsap.timeline({ delay: 0.5 });
+
+      // 3. Animamos el array completo usando 'stagger'
+      tl.to(htmlElements, {
+        opacity: 1,
+        x: 0, // Vuelve a su posición original (quitando el translateX del CSS)
+        duration: 0.8, // Lo que tarda CADA elemento en aparecer
+        ease: 'power3.out', // Una animación suave al frenar
+        stagger: 0.3, // El tiempo de espera (0.3s) entre la aparición de un hito y el siguiente
       });
     }
   }

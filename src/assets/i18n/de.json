@@ -12,22 +12,29 @@
       "TITLE": "",
       "DESCRIPTION": "Von Sprachen zur Logik. Ich bin eine Übersetzerin und Dolmetscherin, die zur Webentwicklerin wurde und linguistische Präzision mit digitaler Architektur verschmilzt."
     },
-
     "ABOUT": {
-      "TITLE": "Über mich",
-      "DESCRIPTION": "Mein Aufenthalt an der University of Münster sowie meine Ausbildung in Córdoba haben meine globale Denkweise, Anpassungsfähigkeit und einen sorgfältigen Ansatz zur Lösung komplexer Aufgaben im Team geprägt. Ich schlage Brücken – zwischen Sprachen ebenso wie zwischen Nutzerinnen und Nutzern und Technologie.",
+      "TITLE": "Beruflicher Werdegang",
+      "DESCRIPTION": "Von der Sprachvermittlung zur Code-Architektur. Mein interdisziplinärer Hintergrund ermöglicht es mir, technische Projekte mit einer ganzheitlichen Perspektive und klarer, präziser Kommunikation anzugehen.",
       "TIMELINE": {
-        "MUNSTER": {
-          "DATE": "Deutschland",
-          "TEXT": "Akademische Erfahrung an der University of Münster, die mir eine internationale Perspektive und die Arbeit in multikulturellen Kontexten ermöglichte."
-        },
         "CORDOBA": {
-          "DATE": "Spanien",
-          "TEXT": "Universitäre Ausbildung in Córdoba mit Fokus auf Analyse, Kommunikation und strukturiertes Denken."
+          "DATE": "2019",
+          "TEXT": "Bachelorabschluss in Übersetzen und Dolmetschen – Universität Córdoba."
         },
-        "NOW": {
-          "DATE": "Heute",
-          "TEXT": "Entwicklung digitaler Lösungen mit einem menschenzentrierten Ansatz, der Technologie, Design und Nutzererlebnis verbindet."
+        "MUNSTER": {
+          "DATE": "2021",
+          "TEXT": "Erasmus-Aufenthalt an der University of Münster – Sprachliche und kulturelle Immersion in Deutschland."
+        },
+        "TRANSLATION": {
+          "DATE": "2023",
+          "TEXT": "Abschluss des Studiums und erste berufliche Erfahrungen im Übersetzungsbereich."
+        },
+        "WEBDEV": {
+          "DATE": "2024",
+          "TEXT": "Berufsausbildung im Bereich Webentwicklung (DAW) – Spezialisierung auf moderne Technologien wie Angular."
+        },
+        "PLEXUS": {
+          "DATE": "Aktuell",
+          "TEXT": "Entwicklerin bei Plexus Tech – Entwicklung skalierbarer digitaler Lösungen."
         }
       }
     }

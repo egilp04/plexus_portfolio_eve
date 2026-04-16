@@ -14,20 +14,28 @@
     },
 
     "ABOUT": {
-      "TITLE": "Sobre mí",
-      "DESCRIPTION": "Mi paso por la University of Münster y mi formación en Córdoba me han dotado de una mentalidad global, capacidad de adaptación y un enfoque meticuloso para resolver retos complejos en equipo. Construyo puentes, ya sea entre idiomas o entre usuarios y tecnología.",
+      "TITLE": "Trayectoria",
+      "DESCRIPTION": "De la interpretación de lenguas a la arquitectura de código. Mi formación multidisciplinar me permite abordar proyectos técnicos con una visión global y una comunicación impecable.",
       "TIMELINE": {
-        "MUNSTER": {
-          "DATE": "Alemania",
-          "TEXT": "Experiencia académica en la University of Münster, donde desarrollé una visión internacional y habilidades para trabajar en entornos multiculturales."
-        },
         "CORDOBA": {
-          "DATE": "España",
-          "TEXT": "Formación universitaria en Córdoba, consolidando una base sólida en análisis, comunicación y pensamiento estructurado."
+          "DATE": "2019",
+          "TEXT": "Grado en Traducción e Interpretación - Univ. de Córdoba."
         },
-        "NOW": {
-          "DATE": "Hoy",
-          "TEXT": "Desarrollo soluciones digitales con una perspectiva humana, conectando tecnología, diseño y experiencia de usuario."
+        "MUNSTER": {
+          "DATE": "2021",
+          "TEXT": "Erasmus en University of Münster - Inmersión lingüística y cultural en Alemania."
+        },
+        "TRANSLATION": {
+          "DATE": "2023",
+          "TEXT": "Graduación y primeros pasos profesionales en el sector de la traducción."
+        },
+        "WEBDEV": {
+          "DATE": "2024",
+          "TEXT": "Grado Superior DAW - Especialización en tecnologías modernas como Angular."
+        },
+        "PLEXUS": {
+          "DATE": "Actualidad",
+          "TEXT": "Desarrolladora en Plexus Tech - Creando soluciones digitales escalables."
         }
       }
     }

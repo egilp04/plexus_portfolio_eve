@@ -12,21 +12,30 @@
       "TITLE": "",
       "DESCRIPTION": "From languages to logic. I am a Translator and Interpreter turned Web Developer, fusing linguistic precision with digital architecture."
     },
+
     "ABOUT": {
-      "TITLE": "About me",
-      "DESCRIPTION": "My time at the University of Münster and my academic background in Córdoba have shaped a global mindset, strong adaptability, and a meticulous approach to solving complex challenges in teams. I build bridges — between languages, and between users and technology.",
+      "TITLE": "Professional Journey",
+      "DESCRIPTION": "From language interpretation to code architecture. My multidisciplinary background allows me to approach technical projects with a global perspective and clear, effective communication.",
       "TIMELINE": {
-        "MUNSTER": {
-          "DATE": "Germany",
-          "TEXT": "Academic experience at the University of Münster, where I developed an international perspective and strengthened my ability to work in multicultural environments."
-        },
         "CORDOBA": {
-          "DATE": "Spain",
-          "TEXT": "University studies in Córdoba, building a solid foundation in analysis, communication, and structured thinking."
+          "DATE": "2019",
+          "TEXT": "Bachelor’s Degree in Translation and Interpreting – University of Córdoba."
         },
-        "NOW": {
-          "DATE": "Today",
-          "TEXT": "Designing and developing digital solutions with a human-centered approach, connecting technology, design, and user experience."
+        "MUNSTER": {
+          "DATE": "2021",
+          "TEXT": "Erasmus program at the University of Münster – Linguistic and cultural immersion in Germany."
+        },
+        "TRANSLATION": {
+          "DATE": "2023",
+          "TEXT": "Graduation and first professional steps in the translation industry."
+        },
+        "WEBDEV": {
+          "DATE": "2024",
+          "TEXT": "Higher Vocational Degree in Web Application Development (DAW) – Specialization in modern technologies such as Angular."
+        },
+        "PLEXUS": {
+          "DATE": "Present",
+          "TEXT": "Developer at Plexus Tech – Building scalable digital solutions."
         }
       }
     }
