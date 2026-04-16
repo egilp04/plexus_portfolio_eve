@@ -1,0 +1,131 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--font-h1-lg);
+  margin: var(--margin-50);
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  padding: var(--padding-20) var(--padding-100);
+  column-gap: var(--gap-50);
+  row-gap: var(--gap-30);
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  grid-auto-flow: row dense;
+  grid-template-areas:
+    "username subject"
+    "surnames message"
+    "phone message"
+    "email contactPreference"
+    ". submit";
+}
+.form-container > div:first-child {
+  grid-area: username;
+}
+.form-container > div:nth-child(2) {
+  grid-area: surnames;
+}
+.form-container > div:nth-child(3) {
+  grid-area: phone;
+}
+.form-container > div:nth-child(4) {
+  grid-area: email;
+}
+.form-container > div:nth-child(5) {
+  grid-area: subject;
+}
+.form-container > div:nth-child(6) {
+  grid-area: message;
+}
+.form-container > div:nth-child(7) {
+  grid-area: contactPreference;
+}
+.form-container > button {
+  grid-area: submit;
+  justify-self: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+  gap: var(--gap-4);
+}
+
+.input-container > input {
+  width: 100%;
+}
+
+.contactPreference-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: var(--margin-20);
+}
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: var(--margin-20);
+  width: auto;
+  gap: var(--gap-20);
+}
+.checkbox-container > div {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-10);
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: var(--font-h1-sm);
+    margin-top: var(--margin-20);
+  }
+  .form-container {
+    padding: var(--padding-20) var(--padding-60);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  h1 {
+    font-size: var(--font-h1-md);
+    margin: var(--margin-20) 0 var(--margin-20) 0;
+  }
+  .form-container {
+    padding: var(--padding-30) var(--padding-120);
+  }
+}
+
+@media (max-width: 1200px) {
+  .form-container {
+    grid-template-columns: 1fr;
+    gap: var(--gap-30);
+    grid-template-areas:
+      "username"
+      "surnames"
+      "phone"
+      "email"
+      "subject"
+      "message"
+      "contactPreference"
+      "submit";
+  }
+  .checkbox-container {
+    display: inline-block;
+    align-items: center;
+    margin: var(--margin-20);
+    width: auto;
+  }
+}
