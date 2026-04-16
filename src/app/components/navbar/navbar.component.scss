@@ -88,6 +88,13 @@
     font-size: var(--font-nav-md);
     line-height: var(--line-height-nav-md);
   }
+
+  .lang-switch{
+    align-items: flex-start;
+    text-align: left;
+    justify-content: stretch;
+  }
+
 }
 
 @media (min-width: 1200px) {
