@@ -36,6 +36,10 @@
   color: var(--color-base);
 }
 
+.navbar-items {
+  cursor: pointer;
+}
+
 :host ::ng-deep .p-menu {
   background: transparent;
   border: none;

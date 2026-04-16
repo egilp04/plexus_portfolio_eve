@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: var(--gap-10);
-  min-height: 20rem;
+  min-height: 28rem;
 }
 
 .landing-section-2 {
@@ -26,4 +26,22 @@
 .subtitle {
   line-height: 1.6;
   opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .landing-section-1 {
+    min-height: 14rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .landing-section-1 {
+    min-height: 24rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .landing-section-1 {
+    min-height: 20rem;
+  }
 }
