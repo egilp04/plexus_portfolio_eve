@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { MenuItem } from 'primeng/api';
 import { Menu } from 'primeng/menu';
 
 @Component({
   selector: 'app-navbar',
-  imports: [Menu],
+  imports: [Menu, RouterLink, TranslateModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
   standalone: true,
@@ -12,7 +14,17 @@ import { Menu } from 'primeng/menu';
 export class NavbarComponent implements OnInit {
   items: MenuItem[] | undefined;
 
+  constructor(private translate: TranslateService) {}
+  langActual = signal('es');
+  router = inject(Router);
+  changeLang(lang: string) {
+    const langSelec = lang;
+    this.translate.use(langSelec);
+    localStorage.setItem('idioma_seleccionado', langSelec);
+  }
+
   ngOnInit() {
+    this.langActual.set(this.translate.getFallbackLang() ?? 'es');
     this.items = [
       { label: 'New', icon: 'pi pi-plus' },
       { label: 'Search', icon: 'pi pi-search' },
