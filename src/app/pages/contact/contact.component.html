@@ -1,1 +1,67 @@
-<app-input-component></app-input-component>
+<h1>{{ "PAGES.CONTACT.TITLE" | translate | titlecase }}</h1>
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="form-container">
+  <div class="formulario-divs">
+    <label for="firstName">{{ "PAGES.CONTACT.INPUTS.NAME" | translate }}</label>
+    <input
+      type="text"
+      formControlName="firstName"
+      autocomplete="off"
+      id="firstName"
+      class="contact-input"
+      [placeholder]="'PAGES.CONTACT.INPUTS.NAME' | translate"
+    />
+    @if (
+      profileForm.get("firstName")?.touched &&
+      profileForm.get("firstName")?.invalid
+    ) {
+      <p class="text-red-800">{{ "PAGES.CONTACT.ERROR.NAME" | translate }}</p>
+    }
+  </div>
+
+  <div class="formulario-divs">
+    <label for="lastName">{{
+      "PAGES.CONTACT.INPUTS.SURNAME" | translate
+    }}</label>
+    <input
+      type="text"
+      formControlName="lastName"
+      autocomplete="off"
+      id="lastName"
+      [placeholder]="'PAGES.CONTACT.INPUTS.SURNAME' | translate"
+      class="contact-input"
+    />
+    @if (
+      profileForm.get("lastName")?.touched &&
+      profileForm.get("lastName")?.invalid
+    ) {
+      <p class="text-red-800">
+        {{ "PAGES.CONTACT.ERROR.SURNAME" | translate }}
+      </p>
+    }
+  </div>
+
+  <div class="formulario-divs">
+    <label for="address">{{
+      "PAGES.CONTACT.INPUTS.DIRECTION" | translate
+    }}</label>
+    <input
+      type="text"
+      formControlName="address"
+      autocomplete="off"
+      id="address"
+      [placeholder]="'PAGES.CONTACT.INPUTS.DIRECTION' | translate"
+      class="contact-input"
+    />
+    @if (
+      profileForm.get("address")?.touched && profileForm.get("address")?.invalid
+    ) {
+      <p class="text-red-800">
+        {{ "PAGES.CONTACT.ERROR.DIRECTION" | translate }}
+      </p>
+    }
+  </div>
+  <button type="submit" class="p-2 bg-gray-200 hover:bg-gray-300 rounded-md">
+    {{ "PAGES.CONTACT.BUTTON.SEND" | translate }}
+  </button>
+</form>

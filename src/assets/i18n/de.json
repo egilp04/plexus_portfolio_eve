@@ -40,6 +40,23 @@
     },
     "PROJECTS": {
       "TITLE": "Projekte"
+    },
+
+    "CONTACT": {
+      "TITLE": "Kontaktform",
+      "INPUTS": {
+        "NAME": "Vorname",
+        "SURNAME": "Nachname",
+        "DIRECTION": "Adresse"
+      },
+      "ERROR": {
+        "NAME": "Bitte Format überprüfen",
+        "SURNAME": "Bitte Format überprüfen",
+        "DIRECTION": "Bitte Format überprüfen"
+      },
+      "BUTTON": {
+        "SEND": "Daten senden"
+      }
     }
   }
 }

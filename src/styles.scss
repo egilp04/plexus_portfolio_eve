@@ -3,7 +3,7 @@
 :root {
   --color-base: #341539;
   --color-primary: #f9edf7;
-  --color-secondary: #e5b1ed;
+  --color-secondary: #ead0ee;
   --color-accent: #eaaef2;
   --color-disabled: #a2a7a7;
   --color-card: #fedafd;
@@ -397,20 +397,11 @@ p {
     font-size: var(--font-p-sm);
     padding: var(--padding-10) 0px;
   }
-  .map-wrapper {
-    padding: var(--padding-20) var(--padding-20) var(--padding-30)
-      var(--padding-20);
-  }
-
-  .map-wrapper iframe {
-    height: 420px;
-  }
+  
   h1 {
     font-size: var(--font-h1-sm);
   }
-  .form-container {
-    padding: var(--padding-20) var(--padding-60);
-  }
+
   span {
     font-family: var(--font-Poppins);
     color: var(--color-primary);
@@ -421,10 +412,6 @@ p {
 @media (min-width: 480px) and (max-width: 1200px) {
   h1 {
     font-size: var(--font-h1-md);
-  }
-
-  .form-container {
-    padding: var(--padding-30) var(--padding-120);
   }
   nav {
     font-size: var(--font-nav-md);
@@ -464,17 +451,7 @@ p {
   p {
     font-size: var(--font-p-md);
   }
-  main > section:last-child {
-    margin-top: var(--margin-16);
-  }
-  .map-wrapper {
-    padding: var(--padding-40) var(--padding-50);
-    margin-top: var(--margin-16);
-  }
 
-  .map-wrapper iframe {
-    height: 338px;
-  }
 
   span {
     font-family: var(--font-Poppins);
@@ -483,27 +460,4 @@ p {
   }
 }
 
-@media (max-width: 1200px) {
-  .map-wrapper {
-    margin-top: var(--margin-16);
-  }
-  .form-container {
-    grid-template-columns: 1fr;
-    gap: var(--gap-30);
-    grid-template-areas:
-      "username"
-      "surnames"
-      "phone"
-      "email"
-      "subject"
-      "message"
-      "contactPreference"
-      "submit";
-  }
-  .checkbox-container {
-    display: inline-block;
-    align-items: center;
-    margin: var(--margin-20);
-    width: auto;
-  }
-}
+

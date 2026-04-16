@@ -41,6 +41,20 @@
     },
     "PROJECTS": {
       "TITLE": "Projects"
+    },
+    "CONTACT": {
+      "TITLE": "Contact formu",
+      "INPUTS": {
+        "NAME": "Name",
+        "SURNAME": "Surname",
+        "DIRECTION": "Direction"
+      },
+      "ERROR": {
+        "NAME": "Check the format",
+        "SURNAME": "Check the format",
+        "DIRECTION": "Check the direction format"
+      },
+      "BUTTON": { "SEND": "Send Data" }
     }
   }
 }

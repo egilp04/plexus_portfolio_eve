@@ -41,6 +41,20 @@
     },
     "PROJECTS": {
       "TITLE": "Proyectos"
+    },
+    "CONTACT": {
+      "TITLE": "Formulario de contacto",
+      "INPUTS": {
+        "NAME": "Nombre",
+        "SURNAME": "Apellidos",
+        "DIRECTION": "Dirección"
+      },
+      "ERROR": {
+        "NAME": "Comprueba el formato",
+        "SURNAME": "Comprueba el formato",
+        "DIRECTION": "Comprueba el formato"
+      },
+      "BUTTON": { "SEND": "Enviar Datos" }
     }
   }
 }
