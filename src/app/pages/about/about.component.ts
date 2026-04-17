@@ -11,7 +11,8 @@ import { isPlatformBrowser } from '@angular/common';
 import { gsap } from 'gsap';
 import { TranslateModule } from '@ngx-translate/core';
 import { AnioExperienciaPipe } from '../../pipes/anio-experiencia.pipe';
-import { CarrouselComponent } from "../../components/carrousel/carrousel.component";
+import { CarrouselComponent } from '../../components/carrousel/carrousel.component';
+import tecnologias from '../../../assets/data/tecnologias.json';
 
 @Component({
   selector: 'app-about',
@@ -23,6 +24,7 @@ import { CarrouselComponent } from "../../components/carrousel/carrousel.compone
 export class AboutComponent implements AfterViewInit {
   @ViewChildren('timelineItem') items!: QueryList<ElementRef>;
   timelineKeys = ['CORDOBA', 'MUNSTER', 'TRANSLATION', 'WEBDEV', 'PLEXUS'];
+  techStack = tecnologias;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 

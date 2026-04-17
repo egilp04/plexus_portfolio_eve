@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
-import tecnologias from '../../../assets/data/tecnologias.json';
+import { Component, Input } from '@angular/core';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { tecnolgiasStack } from '../../models/tecnolgias';
 
 @Component({
   selector: 'app-carrousel',
-  imports: [],
+  imports: [MatTooltipModule],
   templateUrl: './carrousel.component.html',
   styleUrl: './carrousel.component.scss',
 })
 export class CarrouselComponent {
-  techStack = tecnologias;
+  @Input() data: tecnolgiasStack[] = [];
 }
