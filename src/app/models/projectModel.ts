@@ -9,4 +9,3 @@ export interface ProjectModel {
   image: string;
   year: number;
 }
-``;

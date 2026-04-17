@@ -7,6 +7,9 @@
     "LOGIN": "Log in",
     "DASHBOARD_ADMIN": "Dashboard"
   },
+  "SELECT": {
+    "TITLE": "Choose an option"
+  },
   "PAGES": {
     "LANDING": {
       "TITLE": "",
@@ -43,6 +46,11 @@
       "TITLE": "Projects",
       "CARDS": {
         "TECHNOLOGIES": "Technologies"
+      },
+      "FILTER": {
+        "FILTER": "Filter by name",
+        "RESET": "Delete filters",
+        "ALL": "All"
       }
     },
     "CONTACT": {

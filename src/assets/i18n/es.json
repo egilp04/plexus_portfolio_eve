@@ -7,6 +7,9 @@
     "LOGIN": "Iniciar sesión",
     "DASHBOARD_ADMIN": "Estadísticas"
   },
+  "SELECT": {
+    "TITLE": "Selecciona una opción"
+  },
   "PAGES": {
     "LANDING": {
       "TITLE": "",
@@ -43,6 +46,11 @@
       "TITLE": "Proyectos",
       "CARDS": {
         "TECHNOLOGIES": "Tecnologías"
+      },
+      "FILTER": {
+        "INPUT": "Filtrar por nombre",
+        "RESET": "Borrar filtros",
+        "ALL": "Todos"
       }
     },
     "CONTACT": {

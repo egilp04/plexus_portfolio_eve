@@ -22,7 +22,7 @@
         profileForm.get("firstName")?.touched &&
         profileForm.get("firstName")?.invalid
       ) {
-        <mat-error>
+        <mat-error class="custom-error">
           {{ "PAGES.LOGIN.ERROR.NAME" | translate }}
         </mat-error>
       }
@@ -44,7 +44,7 @@
         profileForm.get("password")?.touched &&
         profileForm.get("password")?.invalid
       ) {
-        <mat-error>
+        <mat-error class="custom-error">
           {{ "PAGES.LOGIN.ERROR.NAME" | translate }}
         </mat-error>
       }

@@ -67,6 +67,10 @@
   cursor: not-allowed;
 }
 
+.custom-error {
+  color: var(--color-primary) !important;
+}
+
 @media (min-width: 480px) {
   .page h1 {
     font-size: var(--font-h1-md);

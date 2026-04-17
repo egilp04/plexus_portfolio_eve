@@ -1,12 +1,28 @@
 <h1>{{ "PAGES.PROJECTS.TITLE" | translate }}</h1>
+<div>
+  <div class="filter-container">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>{{ "PAGES.PROJECTS.FILTER.INPUT" | translate }}</mat-label>
+      <input matInput type="text" (input)="updateName($event)" />
+    </mat-form-field>
+    <app-select-component
+      [datos]="datosSelect"
+      (selectionChange)="updateTypeProjectFilter($event)"
+    >
+    </app-select-component>
+  </div>
+  <button mat-stroked-button (click)="resetFilters()">
+    {{ "PAGES.PROJECTS.FILTER.RESET" | translate }}
+  </button>
+</div>
+
 <section class="projects-container">
   <div class="projects-grid">
-    @for (item of projectsList; track item.id) {
-      <div #projectCard>
-        <app-card [project]="item"></app-card>
-      </div>
-    } @empty {
-      <p>Cargando proyectos...</p>
+    @for (project of filteredProjects(); track project.id) {
+      <app-card #projectCard [project]="project"> </app-card>
+    }
+    @if (filteredProjects().length <= 0) {
+      <p>No se han encontrado proyectos con esos filtros.</p>
     }
   </div>
 </section>

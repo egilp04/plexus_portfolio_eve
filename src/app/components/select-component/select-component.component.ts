@@ -1,25 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Inject, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
+import { MatSelectChange, MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
-interface Food {
-  value: string;
-  viewValue: string;
-}
+import { TranslateModule } from '@ngx-translate/core';
+import { DatosSelectModel } from '../../models/datosSelectModel';
 
 @Component({
   selector: 'app-select-component',
-  imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule],
+  imports: [
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    FormsModule,
+    TranslateModule,
+  ],
   templateUrl: './select-component.component.html',
   styleUrl: './select-component.component.scss',
   standalone: true,
 })
 export class SelectComponentComponent {
-  foods: Food[] = [
-    { value: 'steak-0', viewValue: 'Steak' },
-    { value: 'pizza-1', viewValue: 'Pizza' },
-    { value: 'tacos-2', viewValue: 'Tacos' },
-  ];
+  @Input() datos: DatosSelectModel[] = [];
+  @Output() selectionChange = new EventEmitter<string>();
+
+  onSelect(event: MatSelectChange) {
+    const value = event.value ?? '';
+    this.selectionChange.emit(value);
+  }
 }

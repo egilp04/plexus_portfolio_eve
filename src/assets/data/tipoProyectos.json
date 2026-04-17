@@ -1,0 +1,5 @@
+[
+  { "value": "frontend", "viewValue": "Frontend" },
+  { "value": "backend", "viewValue": "Backend" },
+  { "value": "fullstack", "viewValue": "Fullstack" }
+]
