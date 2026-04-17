@@ -1,5 +1,7 @@
 import { Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
+import { authGuard } from './core/guards/auth.guard';
+import { adminGuard } from './core/guards/admin.guard';
 
 export const routes: Routes = [
   { path: '', component: AboutComponent },
@@ -19,6 +21,7 @@ export const routes: Routes = [
     path: 'home',
     loadComponent: () =>
       import('./pages/home/home.component').then((m) => m.HomeComponent),
+    canActivate: [authGuard],
   },
   {
     path: 'projects',
@@ -45,5 +48,6 @@ export const routes: Routes = [
       import('./pages/dashboard-admin/dashboard-admin.component').then(
         (m) => m.DashboardAdminComponent,
       ),
+    canActivate: [adminGuard],
   },
 ];

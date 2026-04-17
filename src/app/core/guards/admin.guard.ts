@@ -1,5 +1,16 @@
-import { CanActivateFn } from '@angular/router';
+import { inject } from '@angular/core';
+import { CanActivateFn, Router } from '@angular/router';
+import { SessionService } from '../../services/session.service';
 
 export const adminGuard: CanActivateFn = (route, state) => {
-  return true;
+  const router = inject(Router);
+  const sessionService = inject(SessionService);
+  if (
+    sessionService.userSesion() &&
+    sessionService.userOfSession()?.rol === 'admin'
+  ) {
+    return true;
+  }
+  router.navigate(['/login']);
+  return false;
 };

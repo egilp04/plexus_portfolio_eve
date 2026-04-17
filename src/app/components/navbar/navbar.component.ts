@@ -37,7 +37,10 @@ export class NavbarComponent implements OnInit {
 
   buildMenu() {
     const baseItems: MenuItem[] = [];
-    if (this.userService.userSesion()) {
+    if (
+      this.userService.userSesion() &&
+      this.userService.userOfSession()?.rol != 'admin'
+    ) {
       baseItems.push({
         label: 'NAV.HOME',
         routerLink: '/home',
@@ -48,7 +51,7 @@ export class NavbarComponent implements OnInit {
       { label: 'NAV.CONTACT', routerLink: '/contact' },
       { label: 'NAV.PROJECTS', routerLink: '/projects' },
     );
-    if (!this.userService.userSesion()) {
+    if (!this.userService.userOfSession()) {
       baseItems.push({
         label: 'NAV.LOGIN',
         routerLink: '/login',
