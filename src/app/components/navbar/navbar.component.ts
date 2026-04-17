@@ -66,7 +66,10 @@ export class NavbarComponent implements OnInit {
     if (this.userService.userSesion()) {
       baseItems.push({
         label: 'NAV.CLOSESESION',
-        command: () => this.userService.cerrarSesion(),
+        command: () => {
+          this.userService.cerrarSesion();
+          this.router.navigate(['/login']);
+        },
       });
     }
     this.items = baseItems;

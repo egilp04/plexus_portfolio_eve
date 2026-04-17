@@ -5,7 +5,7 @@
     "CONTACT": "Kontakt",
     "PROJECTS": "Projekte",
     "LOGIN": "Anmelden",
-    "DASHBOARD_ADMIN": "Dashboard",
+    "DASHBOARD_ADMIN": "Statistik",
     "CLOSESESION": "Abmelden"
   },
   "SELECT": {
@@ -85,6 +85,14 @@
       },
       "BUTTON": {
         "SEND": "Anmelden"
+      }
+    },
+    "DASHBOARD_ADMIN": {
+      "TITLE": "Statistik",
+      "CHARGING": "Daten laden",
+      "CHARS": {
+        "TYPE": "Nach Statistiken",
+        "TECH": "Nach Technologien"
       }
     }
   }

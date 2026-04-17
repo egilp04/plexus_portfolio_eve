@@ -1,1 +1,26 @@
-<p>chat-support works!</p>
+<div class="chat-wrapper">
+  <div class="chat-fab" (click)="toggleChat()" #chatFab>💬</div>
+
+  <div class="chat-box" [class.open]="isOpen" #chatBox>
+    <div class="chat-header">
+      <span>Soporte</span>
+      <button (click)="toggleChat()">✕</button>
+    </div>
+
+    <div class="chat-messages">
+      <div class="msg" *ngFor="let msg of messages">
+        {{ msg }}
+      </div>
+    </div>
+
+    <form class="chat-input" (submit)="sendMessage($event)">
+      <input
+        type="text"
+        [(ngModel)]="message"
+        name="message"
+        placeholder="Escribe un mensaje…"
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>

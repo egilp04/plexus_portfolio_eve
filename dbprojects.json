@@ -31,7 +31,7 @@
       "description": "Portfolio interactivo multilingüe desarrollado con las últimas características de Angular (Standalone Components, Signals).",
       "type": "frontend",
       "company": "Personal",
-      "technologies": ["Angular 17+", "GSAP", "SCSS", "PrimeNG"],
+      "technologies": ["Angular", "GSAP", "SCSS", "PrimeNG"],
       "image": "assets/img/portfolio.png",
       "year": 2024,
       "url": "https://github.com/"

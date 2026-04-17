@@ -81,6 +81,14 @@
         "PASSWORD": "Error con la contraseña, chequea el formato"
       },
       "BUTTON": { "SEND": "Iniciar sesión" }
+    },
+    "DASHBOARD_ADMIN": {
+      "TITLE": "Estadísticas",
+      "CHARGING": "Cargando datos",
+      "CHARS": {
+        "TYPE": "Por stack",
+        "TECH": "Por tecnología"
+      }
     }
   }
 }

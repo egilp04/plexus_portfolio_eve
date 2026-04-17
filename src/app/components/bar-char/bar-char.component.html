@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-title class="title">{{ title | translate }}</mat-card-title>
+  <canvas
+    baseChart
+    [type]="barChartType"
+    [data]="chartData"
+    [options]="chartOptions"
+  >
+  </canvas>
+</mat-card>

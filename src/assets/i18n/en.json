@@ -5,7 +5,7 @@
     "CONTACT": "Contact",
     "PROJECTS": "Projects",
     "LOGIN": "Log in",
-    "DASHBOARD_ADMIN": "Dashboard",
+    "DASHBOARD_ADMIN": "Statistics",
     "CLOSESESION": "Close session"
   },
   "SELECT": {
@@ -83,6 +83,14 @@
       },
       "BUTTON": {
         "SEND": "Log in"
+      }
+    },
+    "DASHBOARD_ADMIN": {
+      "TITLE": "Statistics",
+      "CHARGING": "Chargind data",
+      "CHARS": {
+        "TYPE": "By stack",
+        "TECH": "By technology"
       }
     }
   }

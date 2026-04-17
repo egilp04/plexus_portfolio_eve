@@ -1,0 +1,36 @@
+.estadisticas {
+  width: 100%;
+}
+
+.chart-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-30);
+}
+
+.chart-section app-bar-char {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.cargando-estadisticas {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--gap-20);
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .chart-section {
+    min-height: 40vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chart-section {
+    min-height: 100vh;
+  }
+}
