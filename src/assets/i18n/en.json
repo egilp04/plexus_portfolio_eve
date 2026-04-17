@@ -5,7 +5,8 @@
     "CONTACT": "Contact",
     "PROJECTS": "Projects",
     "LOGIN": "Log in",
-    "DASHBOARD_ADMIN": "Dashboard"
+    "DASHBOARD_ADMIN": "Dashboard",
+    "CLOSESESION": "Close session"
   },
   "SELECT": {
     "TITLE": "Choose an option"

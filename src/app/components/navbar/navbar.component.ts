@@ -1,9 +1,9 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
-import { Router, RouterLink, RouterLinkActive } from '@angular/router'; // <-- Importa estas dos
+import { Component, effect, inject, OnInit, signal } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { MenuItem } from 'primeng/api';
 import { MenuModule } from 'primeng/menu';
-import { UserJsonServerService } from '../../services/user-json-server.service';
+import { SessionService } from '../../services/session.service';
 
 @Component({
   selector: 'app-navbar',
@@ -13,12 +13,21 @@ import { UserJsonServerService } from '../../services/user-json-server.service';
   standalone: true,
 })
 export class NavbarComponent implements OnInit {
-  items: MenuItem[] | undefined;
+  items: MenuItem[] = [];
   langActual = signal('es');
   router = inject(Router);
+  userService = inject(SessionService);
 
+  constructor(private translate: TranslateService) {
+    effect(() => {
+      this.buildMenu();
+    });
+  }
 
-  constructor(private translate: TranslateService) {}
+  ngOnInit() {
+    this.langActual.set(this.translate.getFallbackLang() ?? 'es');
+    this.buildMenu();
+  }
 
   changeLang(lang: string) {
     const langSelec = lang;
@@ -26,15 +35,34 @@ export class NavbarComponent implements OnInit {
     localStorage.setItem('idioma_seleccionado', langSelec);
   }
 
-  ngOnInit() {
-    this.langActual.set(this.translate.getFallbackLang() ?? 'es');
-    this.items = [
+  buildMenu() {
+    const baseItems: MenuItem[] = [
       { label: 'NAV.ABOUT', routerLink: '/about' },
       { label: 'NAV.CONTACT', routerLink: '/contact' },
       { label: 'NAV.PROJECTS', routerLink: '/projects' },
-      { label: 'NAV.LOGIN', routerLink: '/login' },
-      { label: 'NAV.HOME', routerLink: '/home' },
-      { label: 'NAV.DASHBOARD_ADMIN', routerLink: '/dashboard' },
     ];
+
+    if (!this.userService.userSesion()) {
+      baseItems.push({ label: 'NAV.LOGIN', routerLink: '/login' });
+    }
+
+    if (this.userService.userSesion()) {
+      baseItems.push(
+        {
+          label: 'NAV.HOME',
+          routerLink: '/home',
+        },
+        { label: 'NAV.CLOSESESION', routerLink: '/login' },
+      );
+    }
+
+    if (this.userService.userOfSession()?.rol === 'admin') {
+      baseItems.push({
+        label: 'NAV.DASHBOARD_ADMIN',
+        routerLink: '/dashboard',
+      });
+    }
+
+    this.items = baseItems;
   }
 }

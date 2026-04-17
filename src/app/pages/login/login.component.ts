@@ -26,21 +26,21 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class LoginComponent {
   private formBuilder = inject(FormBuilder);
-  private userOnSesionEmailService = inject(SessionService);
+  private sessionService = inject(SessionService);
   private authService = inject(AuthService);
+  private router = inject(Router);
 
   profileForm = this.formBuilder.nonNullable.group({
     firstName: ['', Validators.required],
     password: ['', Validators.required],
   });
 
-  router = inject(Router);
-
   onSubmit() {
     if (this.profileForm.invalid) {
-      alert('hay campos invalidos');
+      alert('Hay campos inválidos');
       return;
     }
+
     this.authService
       .login(
         this.profileForm.controls.firstName.value,
@@ -51,13 +51,9 @@ export class LoginComponent {
           alert('Usuario o contraseña incorrectos');
           return;
         }
-        const user = res;
-        const userSesionEmail =
-          this.userOnSesionEmailService.userOnSessionEmail;
-        userSesionEmail.set(user?.email);
-        this.authService.userToken.set(user?.token);
+        this.sessionService.iniciarSesion(res, res.token);
+        this.profileForm.reset();
         this.router.navigate(['/home']);
       });
-    this.profileForm.reset();
   }
 }

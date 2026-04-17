@@ -5,7 +5,8 @@
     "CONTACT": "Contacto",
     "PROJECTS": "Proyectos",
     "LOGIN": "Iniciar sesión",
-    "DASHBOARD_ADMIN": "Estadísticas"
+    "DASHBOARD_ADMIN": "Estadísticas",
+    "CLOSESESION": "Cerrar sesión"
   },
   "SELECT": {
     "TITLE": "Selecciona una opción"

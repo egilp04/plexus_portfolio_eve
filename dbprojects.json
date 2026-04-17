@@ -9,7 +9,8 @@
       "company": "Plexus Tech",
       "technologies": ["Angular", "TypeScript", "SCSS", "REST API", "Chart.js"],
       "image": "assets/img/plexus-dashboard.jpg",
-      "year": 2024
+      "year": 2024,
+      "url": "https://github.com/"
     },
     {
       "id": "translation-api",
@@ -20,7 +21,8 @@
       "company": "Freelance",
       "technologies": ["Node.js", "Express", "MongoDB", "JWT"],
       "image": "assets/img/api.jpg",
-      "year": 2023
+      "year": 2023,
+      "url": "https://github.com/"
     },
     {
       "id": "portfolio",
@@ -31,7 +33,8 @@
       "company": "Personal",
       "technologies": ["Angular 17+", "GSAP", "SCSS", "PrimeNG"],
       "image": "assets/img/portfolio.png",
-      "year": 2024
+      "year": 2024,
+      "url": "https://github.com/"
     },
     {
       "id": "ecommerce-java",
@@ -42,7 +45,8 @@
       "company": "Academic Project",
       "technologies": ["Angular", "Spring Boot", "MySQL", "Hibernate"],
       "image": "assets/img/ecommerce-java.jpg",
-      "year": 2022
+      "year": 2022,
+      "url": "https://github.com/"
     },
     {
       "id": "invoice-generator",
@@ -53,7 +57,8 @@
       "company": "Personal",
       "technologies": ["Node.js", "Puppeteer", "Docker"],
       "image": "assets/img/invoice.png",
-      "year": 2024
+      "year": 2024,
+      "url": "https://github.com/"
     },
     {
       "id": "weather-widget",
@@ -64,7 +69,8 @@
       "company": "Personal",
       "technologies": ["Angular", "RxJS", "OpenWeather API"],
       "image": "assets/img/weather-widget.jpg",
-      "year": 2023
+      "year": 2023,
+      "url": "https://github.com/"
     },
     {
       "id": "hr-management-system",
@@ -75,7 +81,8 @@
       "company": "Plexus Tech",
       "technologies": ["Angular", "C#", ".NET Core", "SQL Server"],
       "image": "assets/img/hr-management-system.jpeg",
-      "year": 2024
+      "year": 2024,
+      "url": "https://github.com/"
     }
   ]
 }

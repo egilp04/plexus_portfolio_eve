@@ -8,4 +8,5 @@ export interface ProjectModel {
   technologies: string[];
   image: string;
   year: number;
+  url: string;
 }
