@@ -14,7 +14,7 @@
     },
     "ABOUT": {
       "TITLE": "Beruflicher Werdegang",
-      "DESCRIPTION": "Von der Sprachvermittlung zur Code-Architektur. Mein interdisziplinärer Hintergrund ermöglicht es mir, technische Projekte mit einer ganzheitlichen Perspektive und klarer, präziser Kommunikation anzugehen.",
+      "DESCRIPTION": "Von der Sprachvermittlung zur Code-Architektur. Mein interdisziplinärer Hintergrund ermöglicht es mir, technische Projekte mit einer ganzheitlichen Perspektive und klarer, präziser Kommunikation anzugehen. {{value}} Jahren Erfahrung in Deutsch.",
       "TIMELINE": {
         "CORDOBA": {
           "DATE": "2019",
@@ -29,7 +29,7 @@
           "TEXT": "Abschluss des Studiums und erste berufliche Erfahrungen im Übersetzungsbereich."
         },
         "WEBDEV": {
-          "DATE": "2024",
+          "DATE": "2025",
           "TEXT": "Berufsausbildung im Bereich Webentwicklung (DAW) – Spezialisierung auf moderne Technologien wie Angular."
         },
         "PLEXUS": {
@@ -39,7 +39,10 @@
       }
     },
     "PROJECTS": {
-      "TITLE": "Projekte"
+      "TITLE": "Projekte",
+      "CARDS": {
+        "TECHNOLOGIES": "Technologien"
+      }
     },
 
     "CONTACT": {

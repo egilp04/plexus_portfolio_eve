@@ -15,7 +15,7 @@
 
     "ABOUT": {
       "TITLE": "Professional Journey",
-      "DESCRIPTION": "From language interpretation to code architecture. My multidisciplinary background allows me to approach technical projects with a global perspective and clear, effective communication.",
+      "DESCRIPTION": "From language interpretation to code architecture. My multidisciplinary background allows me to approach technical projects with a global perspective and clear, effective communication.  {{value}} years of experience.",
       "TIMELINE": {
         "CORDOBA": {
           "DATE": "2019",
@@ -40,7 +40,10 @@
       }
     },
     "PROJECTS": {
-      "TITLE": "Projects"
+      "TITLE": "Projects",
+      "CARDS": {
+        "TECHNOLOGIES": "Technologies"
+      }
     },
     "CONTACT": {
       "TITLE": "Contact formu",

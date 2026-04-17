@@ -10,6 +10,6 @@ export class AnioExperienciaPipe implements PipeTransform {
     const anioActual = new Date().getFullYear();
     const experiencia = anioActual - anioInicio;
 
-    return `${experiencia} años de experiencia`;
+    return `${experiencia}`;
   }
 }

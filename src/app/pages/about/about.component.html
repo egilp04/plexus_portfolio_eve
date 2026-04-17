@@ -1,7 +1,13 @@
 <section class="about">
   <header class="about-intro">
     <h2>{{ "PAGES.ABOUT.TITLE" | translate }}</h2>
-    <p>{{ "PAGES.ABOUT.DESCRIPTION" | translate }}</p>
+
+    <p>
+      {{
+        "PAGES.ABOUT.DESCRIPTION"
+          | translate: { value: ("2024" | anioExperiencia) }
+      }}
+    </p>
   </header>
 
   <div class="timeline">

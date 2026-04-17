@@ -1,4 +1,4 @@
-<mat-card class="project-card" appearance="outlined">
+<mat-card class="project-card" appZooomCambioColor appearance="outlined">
   <mat-card-header>
     <mat-card-title>{{ project.title }}</mat-card-title>
     <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
@@ -6,5 +6,15 @@
   <img mat-card-image [src]="project.image" [alt]="project.title" />
   <mat-card-content>
     <p>{{ project.description }}</p>
+    <div class="tech-section">
+      <p class="tech-title">
+        {{ "PAGES.PROJECTS.CARDS.TECHNOLOGIES" | translate }}:
+      </p>
+      <div class="tech-tags">
+        @for (tech of project.technologies; track tech) {
+          <span class="tech-tag">{{ tech }}</span>
+        }
+      </div>
+    </div>
   </mat-card-content>
 </mat-card>

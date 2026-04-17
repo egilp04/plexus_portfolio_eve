@@ -15,7 +15,7 @@
 
     "ABOUT": {
       "TITLE": "Trayectoria",
-      "DESCRIPTION": "De la interpretación de lenguas a la arquitectura de código. Mi formación multidisciplinar me permite abordar proyectos técnicos con una visión global y una comunicación impecable.",
+      "DESCRIPTION": "De la interpretación de lenguas a la arquitectura de código. Mi formación multidisciplinar me permite abordar proyectos técnicos con una visión global y una comunicación impecable. Con {{value}} años de experiencia.",
       "TIMELINE": {
         "CORDOBA": {
           "DATE": "2019",
@@ -40,7 +40,10 @@
       }
     },
     "PROJECTS": {
-      "TITLE": "Proyectos"
+      "TITLE": "Proyectos",
+      "CARDS": {
+        "TECHNOLOGIES": "Tecnologías"
+      }
     },
     "CONTACT": {
       "TITLE": "Formulario de contacto",

@@ -14,9 +14,9 @@
   --font-h1-sm: 1.2rem;
   --font-h1-md: 3rem;
   --font-h1-lg: 3.5rem;
-  --font-h2-sm: 1.5rem;
-  --font-h2-md: 3rem;
-  --font-h2-lg: 4rem;
+  --font-h2-sm: 0.75rem;
+  --font-h2-md: 1rem;
+  --font-h2-lg: 1.1rem;
   --font-label-sm: 0.75rem;
   --font-label-md: 1rem;
   --font-label-lg: 1.25rem;
@@ -397,7 +397,7 @@ p {
     font-size: var(--font-p-sm);
     padding: var(--padding-10) 0px;
   }
-  
+
   h1 {
     font-size: var(--font-h1-sm);
   }
@@ -452,12 +452,9 @@ p {
     font-size: var(--font-p-md);
   }
 
-
   span {
     font-family: var(--font-Poppins);
     color: var(--color-primary);
     font-size: var(--font-span-md);
   }
 }
-
-

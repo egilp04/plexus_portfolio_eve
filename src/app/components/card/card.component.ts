@@ -2,9 +2,16 @@ import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { ProjectModel } from '../../models/projectModel';
+import { TranslateModule } from '@ngx-translate/core';
+import { ZooomCambioColorDirective } from '../../directivas/zooom-cambio-color.directive';
 @Component({
   selector: 'app-card',
-  imports: [MatCardModule, MatButtonModule],
+  imports: [
+    MatCardModule,
+    MatButtonModule,
+    TranslateModule,
+    ZooomCambioColorDirective,
+  ],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
