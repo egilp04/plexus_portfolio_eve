@@ -36,33 +36,36 @@ export class NavbarComponent implements OnInit {
   }
 
   buildMenu() {
-    const baseItems: MenuItem[] = [
+    const baseItems: MenuItem[] = [];
+    if (this.userService.userSesion()) {
+      baseItems.push({
+        label: 'NAV.HOME',
+        routerLink: '/home',
+      });
+    }
+    baseItems.push(
       { label: 'NAV.ABOUT', routerLink: '/about' },
       { label: 'NAV.CONTACT', routerLink: '/contact' },
       { label: 'NAV.PROJECTS', routerLink: '/projects' },
-    ];
-
+    );
     if (!this.userService.userSesion()) {
-      baseItems.push({ label: 'NAV.LOGIN', routerLink: '/login' });
+      baseItems.push({
+        label: 'NAV.LOGIN',
+        routerLink: '/login',
+      });
     }
-
-    if (this.userService.userSesion()) {
-      baseItems.push(
-        {
-          label: 'NAV.HOME',
-          routerLink: '/home',
-        },
-        { label: 'NAV.CLOSESESION', routerLink: '/login' },
-      );
-    }
-
     if (this.userService.userOfSession()?.rol === 'admin') {
       baseItems.push({
         label: 'NAV.DASHBOARD_ADMIN',
         routerLink: '/dashboard',
       });
     }
-
+    if (this.userService.userSesion()) {
+      baseItems.push({
+        label: 'NAV.CLOSESESION',
+        command: () => this.userService.cerrarSesion(),
+      });
+    }
     this.items = baseItems;
   }
 }

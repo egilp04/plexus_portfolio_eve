@@ -16,6 +16,9 @@
       "TITLE": "",
       "DESCRIPTION": "Von Sprachen zur Logik. Ich bin eine Übersetzerin und Dolmetscherin, die zur Webentwicklerin wurde und linguistische Präzision mit digitaler Architektur verschmilzt."
     },
+    "HOME": {
+      "WELCOME_MESSAGE": "Wilkommen {{nombre}}"
+    },
     "ABOUT": {
       "TITLE": "Beruflicher Werdegang",
       "DESCRIPTION": "Von der Sprachvermittlung zur Code-Architektur. Mein interdisziplinärer Hintergrund ermöglicht es mir, technische Projekte mit einer ganzheitlichen Perspektive und klarer, präziser Kommunikation anzugehen. {{value}} Jahren Erfahrung in Deutsch.",

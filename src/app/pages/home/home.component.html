@@ -1,1 +1,6 @@
-<p>home works!</p>
+<h1>
+  {{
+    "PAGES.HOME.WELCOME_MESSAGE"
+      | translate: { nombre: this.userSession.userOfSession()?.name }
+  }}
+</h1>

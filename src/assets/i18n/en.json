@@ -16,7 +16,9 @@
       "TITLE": "",
       "DESCRIPTION": "From languages to logic. I am a Translator and Interpreter turned Web Developer, fusing linguistic precision with digital architecture."
     },
-
+    "HOME": {
+      "WELCOME_MESSAGE": "Welcome {{nombre}}"
+    },
     "ABOUT": {
       "TITLE": "Professional Journey",
       "DESCRIPTION": "From language interpretation to code architecture. My multidisciplinary background allows me to approach technical projects with a global perspective and clear, effective communication.  {{value}} years of experience.",

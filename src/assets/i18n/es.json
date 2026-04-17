@@ -16,7 +16,9 @@
       "TITLE": "",
       "DESCRIPTION": "De las lenguas a la lógica. Soy una Traductora e Intérprete reconvertida en Desarrolladora Web, fusionando la precisión lingüística con la arquitectura digital."
     },
-
+    "HOME": {
+      "WELCOME_MESSAGE": "Bienvenid@ {{nombre}}"
+    },
     "ABOUT": {
       "TITLE": "Trayectoria",
       "DESCRIPTION": "De la interpretación de lenguas a la arquitectura de código. Mi formación multidisciplinar me permite abordar proyectos técnicos con una visión global y una comunicación impecable. Con {{value}} años de experiencia.",

@@ -7,12 +7,14 @@ import { routes } from './app.routes';
 
 import { provideTranslateService } from '@ngx-translate/core';
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+import { authInterceptor } from './interceptors/auth.interceptor';
+import { loadingInterceptor } from './interceptors/loading.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideAnimations(),
     provideRouter(routes),
-    provideHttpClient(withInterceptors([])),
+    provideHttpClient(withInterceptors([authInterceptor, loadingInterceptor])),
     provideTranslateService({
       defaultLanguage: localStorage.getItem('idioma_seleccionado') ?? 'es',
       fallbackLang: localStorage.getItem('idioma_seleccionado') ?? 'es',
