@@ -1,1 +1,15 @@
-<p>carrousel works!</p>
+<div class="tech-marquee-container">
+  <div class="marquee-track">
+    @for (tech of techStack; track $index) {
+      <div class="tech-item">
+        <img [src]="tech.icon" [alt]="tech.name" />
+      </div>
+    }
+
+    @for (tech of techStack; track $index) {
+      <div class="tech-item" aria-hidden="true">
+        <img [src]="tech.icon" [alt]="tech.name" />
+      </div>
+    }
+  </div>
+</div>

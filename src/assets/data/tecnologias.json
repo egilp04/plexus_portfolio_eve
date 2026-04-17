@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Angular",
+    "icon": "assets/img/tecnologias/angular.png"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "assets/img/tecnologias/ts.png"
+  },
+  {
+    "name": "Java",
+    "icon": "assets/img/tecnologias/java.png"
+  },
+  {
+    "name": "Node.js",
+    "icon": "assets/img/tecnologias/node.png"
+  },
+  {
+    "name": "React",
+    "icon": "assets/img/tecnologias/react.png"
+  },
+  {
+    "name": "Python",
+    "icon": "assets/img/tecnologias/py.png"
+  },
+  {
+    "name": "Git",
+    "icon": "assets/img/tecnologias/github.png"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "assets/img/tecnologias/js.png"
+  }
+]
