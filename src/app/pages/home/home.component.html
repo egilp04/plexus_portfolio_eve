@@ -1,6 +1,43 @@
-<h1>
-  {{
-    "PAGES.HOME.WELCOME_MESSAGE"
-      | translate: { nombre: this.userSession.userOfSession()?.name }
-  }}
-</h1>
+<section class="home-container">
+  <header class="hero-section">
+    @if (userSession.userOfSession()?.name) {
+      <h1>
+        {{
+          "PAGES.HOME.WELCOME_MESSAGE"
+            | translate: { nombre: userSession.userOfSession()?.name }
+        }}
+      </h1>
+    } @else {
+      <h1>{{ "PAGES.HOME.GUEST_MESSAGE" | translate }}</h1>
+    }
+
+    <h2>{{ "PAGES.HOME.SUBTITLE" | translate }}</h2>
+    <p>{{ "PAGES.HOME.INTRO_TEXT" | translate }}</p>
+  </header>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <mat-icon color="primary">person</mat-icon>
+      <h3>{{ "PAGES.HOME.ABOUT_TITLE" | translate }}</h3>
+      <p>{{ "PAGES.HOME.ABOUT_DESC" | translate }}</p>
+    </div>
+
+    <div class="feature-card">
+      <mat-icon color="primary">code</mat-icon>
+      <h3>{{ "PAGES.HOME.PROJECTS_TITLE" | translate }}</h3>
+      <p>{{ "PAGES.HOME.PROJECTS_DESC" | translate }}</p>
+    </div>
+
+    <div class="feature-card">
+      <mat-icon color="primary">mail</mat-icon>
+      <h3>{{ "PAGES.HOME.CONTACT_TITLE" | translate }}</h3>
+      <p>{{ "PAGES.HOME.CONTACT_DESC" | translate }}</p>
+    </div>
+  </div>
+
+  <div class="chat-fab-container">
+    <button mat-fab color="accent" aria-label="Abrir chat">
+      <mat-icon>chat</mat-icon>
+    </button>
+  </div>
+</section>

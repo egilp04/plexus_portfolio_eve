@@ -17,7 +17,16 @@
       "DESCRIPTION": "Von Sprachen zur Logik. Ich bin eine Übersetzerin und Dolmetscherin, die zur Webentwicklerin wurde und linguistische Präzision mit digitaler Architektur verschmilzt."
     },
     "HOME": {
-      "WELCOME_MESSAGE": "Wilkommen {{nombre}}"
+      "WELCOME_MESSAGE": "Hallo, {{nombre}}! Willkommen in meinem Portfolio.",
+      "GUEST_MESSAGE": "Hallo! Willkommen in meinem Portfolio.",
+      "SUBTITLE": "Fullstack-Entwicklung mit Liebe zum Detail.",
+      "INTRO_TEXT": "Hier findest du eine Reise durch meinen beruflichen und technischen Werdegang. Ich habe diesen Raum so gestaltet, dass du meine Arbeit interaktiv erkunden kannst.",
+      "ABOUT_TITLE": "Über mich",
+      "ABOUT_DESC": "Entdecke meine Geschichte: Wie ich von der Sprachübersetzung zur Code-Architektur kam und welche Technologien meinen Stack bilden.",
+      "PROJECTS_TITLE": "Projekte",
+      "PROJECTS_DESC": "Erkunde meine neuesten Entwicklungen. Auf jeder Karte siehst du die verwendeten Technologien und einen direkten Link zum Code auf GitHub.",
+      "CONTACT_TITLE": "Kontakt",
+      "CONTACT_DESC": "Hast du ein Projekt im Sinn oder suchst du ein hybrides Profil für dein Team? Lass uns sprechen."
     },
     "ABOUT": {
       "TITLE": "Beruflicher Werdegang",
@@ -54,6 +63,52 @@
         "FILTER": "Nach Name filtern",
         "RESET": "Filter löschen",
         "ALL": "Alle"
+      },
+      "CARDPROJECTS": {
+        "01": {
+          "subtitle": "Enterprise-Webplattform",
+          "description": "Unternehmens-Dashboard zur Überwachung interner Kennzahlen und Echtzeit-Datenvisualisierung."
+        },
+        "02": {
+          "subtitle": "Backend-Dienst",
+          "description": "REST-API zur Verwaltung von Übersetzungsprojekten, Linguistenzuweisung und automatisierten Workflows."
+        },
+        "03": {
+          "subtitle": "Frontend-Anwendung",
+          "description": "Designprojekt in Figma zur Erstellung eines Webseitenlayouts."
+        },
+        "04": {
+          "subtitle": "Fullstack-Webanwendung",
+          "description": "E-Commerce-Plattform mit Warenkorb, simulierter Zahlungsabwicklung und Administrationsbereich."
+        },
+        "05": {
+          "subtitle": "Countdown-Timer",
+          "description": "Countdown-Timer, der die verbleibende Zeit bis zu einem bestimmten Datum anzeigt."
+        },
+        "06": {
+          "subtitle": "API-Integration",
+          "description": "Interaktives Wetter-Dashboard mit OpenWeatherMap-API und 7-Tage-Vorhersage."
+        },
+        "07": {
+          "subtitle": "CSS-Prototyp",
+          "description": "CSS-Prototyp basierend auf der Unternehmenswebsite von Fonsaex."
+        },
+        "08": {
+          "subtitle": "Kanban-Prototyp",
+          "description": "Design und Layout eines Kanban-Boards, inspiriert von realen Tools."
+        },
+        "09": {
+          "subtitle": "Projekt über eine Kreativwerkstatt",
+          "description": "Webprojekt zur Präsentation einer Kreativwerkstatt mit modernem und responsivem Design."
+        },
+        "10": {
+          "subtitle": "Experimentelles GSAP-Projekt",
+          "description": "Projekt mit Fokus auf fortgeschrittene Animationen, Übergänge und visuelle Effekte."
+        },
+        "11": {
+          "subtitle": "Einfaches JavaScript-Spiel",
+          "description": "Spiel mit grundlegenden Spielmechaniken, Ereignissteuerung und Zustandsverwaltung in JavaScript."
+        }
       }
     },
 

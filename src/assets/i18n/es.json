@@ -17,7 +17,16 @@
       "DESCRIPTION": "De las lenguas a la lógica. Soy una Traductora e Intérprete reconvertida en Desarrolladora Web, fusionando la precisión lingüística con la arquitectura digital."
     },
     "HOME": {
-      "WELCOME_MESSAGE": "Bienvenid@ {{nombre}}"
+      "WELCOME_MESSAGE": "¡Hola, {{nombre}}! Te doy la bienvenida a mi portfolio.",
+      "GUEST_MESSAGE": "¡Hola! Te doy la bienvenida a mi portfolio.",
+      "SUBTITLE": "Desarrollo Fullstack con atención al detalle.",
+      "INTRO_TEXT": "Aquí encontrarás un recorrido por mi trayectoria profesional y técnica. He diseñado este espacio para que puedas explorar mi trabajo de forma interactiva.",
+      "ABOUT_TITLE": "Sobre mí",
+      "ABOUT_DESC": "Descubre mi historia: cómo pasé de la traducción lingüística a dominar la arquitectura del código, y qué tecnologías forman mi stack principal.",
+      "PROJECTS_TITLE": "Proyectos",
+      "PROJECTS_DESC": "Explora mis últimos desarrollos (Frontend, Backend y Fullstack). En cada uno podrás ver las tecnologías aplicadas y acceder directamente al código en GitHub.",
+      "CONTACT_TITLE": "Contacto",
+      "CONTACT_DESC": "¿Tienes un proyecto en mente o buscas un perfil híbrido para tu equipo? Tienes todas las vías para hablar conmigo."
     },
     "ABOUT": {
       "TITLE": "Trayectoria",
@@ -54,6 +63,52 @@
         "INPUT": "Filtrar por nombre",
         "RESET": "Borrar filtros",
         "ALL": "Todos"
+      },
+      "CARDPROJECTS": {
+        "01": {
+          "SUBTITLE": "Plataforma Web Empresarial",
+          "DESCRIPTION": "Dashboard empresarial para monitorización de métricas internas y visualización de datos en tiempo real."
+        },
+        "02": {
+          "SUBTITLE": "Servicio Backend",
+          "DESCRIPTION": "API REST para la gestión de proyectos de traducción, asignación de lingüistas y flujos de trabajo automatizados."
+        },
+        "03": {
+          "SUBTITLE": "Aplicación Frontend",
+          "DESCRIPTION": "Proyecto de diseño en Figma basado en el desarrollo de una página web."
+        },
+        "04": {
+          "SUBTITLE": "Aplicación Web Fullstack",
+          "DESCRIPTION": "Plataforma de comercio electrónico con carrito de compras, pasarela de pago simulada y panel de administración."
+        },
+        "05": {
+          "SUBTITLE": "Cronómetro",
+          "DESCRIPTION": "Contador que realiza una cuenta atrás hasta una fecha concreta."
+        },
+        "06": {
+          "SUBTITLE": "Integración de API",
+          "DESCRIPTION": "Dashboard meteorológico interactivo que consume la API de OpenWeatherMap con previsión a 7 días."
+        },
+        "07": {
+          "SUBTITLE": "Prototipo CSS",
+          "DESCRIPTION": "Prototipo desarrollado en CSS basado en la web corporativa de Fonsaex."
+        },
+        "08": {
+          "SUBTITLE": "Prototipo Kanban",
+          "DESCRIPTION": "Diseño y maquetación de un tablero Kanban inspirado en herramientas reales."
+        },
+        "09": {
+          "SUBTITLE": "Proyecto sobre un taller de crafteo",
+          "DESCRIPTION": "Proyecto web enfocado en la presentación de un taller de crafteo con diseño moderno y responsive."
+        },
+        "10": {
+          "SUBTITLE": "Proyecto experimental con GSAP",
+          "DESCRIPTION": "Proyecto centrado en animaciones avanzadas, transiciones y efectos visuales para mejorar la experiencia de usuario."
+        },
+        "11": {
+          "SUBTITLE": "Videojuego sencillo en JavaScript",
+          "DESCRIPTION": "Videojuego con mecánicas básicas, control de eventos y gestión de estados mediante JavaScript."
+        }
       }
     },
     "CONTACT": {

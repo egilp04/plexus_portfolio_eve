@@ -17,7 +17,16 @@
       "DESCRIPTION": "From languages to logic. I am a Translator and Interpreter turned Web Developer, fusing linguistic precision with digital architecture."
     },
     "HOME": {
-      "WELCOME_MESSAGE": "Welcome {{nombre}}"
+      "WELCOME_MESSAGE": "Hello, {{nombre}}! Welcome to my portfolio.",
+      "GUEST_MESSAGE": "Hello! Welcome to my portfolio.",
+      "SUBTITLE": "Fullstack Development with attention to detail.",
+      "INTRO_TEXT": "Here you will find a journey through my professional and technical background. I have designed this space so you can explore my work interactively.",
+      "ABOUT_TITLE": "About me",
+      "ABOUT_DESC": "Discover my story: how I transitioned from linguistic translation to mastering code architecture, and which technologies make up my main stack.",
+      "PROJECTS_TITLE": "Projects",
+      "PROJECTS_DESC": "Explore my latest developments. In each card, you will see the applied technologies and a direct link to the source code on GitHub.",
+      "CONTACT_TITLE": "Contact",
+      "CONTACT_DESC": "Do you have a project in mind or are you looking for a hybrid profile for your team? Let's get in touch."
     },
     "ABOUT": {
       "TITLE": "Professional Journey",
@@ -54,6 +63,52 @@
         "FILTER": "Filter by name",
         "RESET": "Delete filters",
         "ALL": "All"
+      },
+      "CARDPROJECTS": {
+        "01": {
+          "subtitle": "Enterprise Web Platform",
+          "description": "Enterprise dashboard for monitoring internal metrics and real-time data visualization."
+        },
+        "02": {
+          "subtitle": "Backend Service",
+          "description": "REST API for managing translation projects, linguist assignments, and automated workflows."
+        },
+        "03": {
+          "subtitle": "Frontend Application",
+          "description": "Figma design project focused on creating a web page layout."
+        },
+        "04": {
+          "subtitle": "Fullstack Web Application",
+          "description": "E-commerce platform with shopping cart, simulated payment gateway, and admin panel."
+        },
+        "05": {
+          "subtitle": "Countdown Timer",
+          "description": "Countdown timer that tracks time remaining until a specific date."
+        },
+        "06": {
+          "subtitle": "API Integration",
+          "description": "Interactive weather dashboard consuming the OpenWeatherMap API with a 7-day forecast."
+        },
+        "07": {
+          "subtitle": "CSS Prototype",
+          "description": "CSS prototype based on the corporate website of Fonsaex."
+        },
+        "08": {
+          "subtitle": "Kanban Prototype",
+          "description": "Design and layout of a Kanban board inspired by real-world tools."
+        },
+        "09": {
+          "subtitle": "Craft Workshop Project",
+          "description": "Web project focused on presenting a craft workshop with a modern, responsive design."
+        },
+        "10": {
+          "subtitle": "Experimental GSAP Project",
+          "description": "Project focused on advanced animations, transitions, and visual effects to enhance user experience."
+        },
+        "11": {
+          "subtitle": "Simple JavaScript Game",
+          "description": "Game with basic mechanics, event handling, and state management implemented in JavaScript."
+        }
       }
     },
     "CONTACT": {

@@ -16,7 +16,10 @@
   --font-h1-lg: 3.5rem;
   --font-h2-sm: 0.75rem;
   --font-h2-md: 1rem;
-  --font-h2-lg: 1.1rem;
+  --font-h2-lg: 1.2rem;
+  --font-h3-sm: 0.6rem;
+  --font-h3-md: 0.75rem;
+  --font-h3-lg: 1rem;
   --font-label-sm: 0.75rem;
   --font-label-md: 1rem;
   --font-label-lg: 1.25rem;
@@ -285,7 +288,7 @@ textarea:focus {
 input::placeholder,
 textarea::placeholder {
   color: var(--color-disabled);
-  opacity: 1; /* sobreescribe la opacidad por defecto del navegador */
+  opacity: 1;
 }
 
 input::-webkit-input-placeholder,
@@ -350,6 +353,13 @@ h2 {
   font-size: var(--font-h2-lg);
 }
 
+h3 {
+  font-size: var(--font-h3-lg);
+  color: var(--color-secondary);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-Fraunces);
+}
+
 p {
   color: var(--color-primary);
   font-family: var(--font-Poppins);
@@ -401,7 +411,9 @@ p {
   h1 {
     font-size: var(--font-h1-sm);
   }
-
+  h3 {
+    font-size: var(--font-h3-sm);
+  }
   span {
     font-family: var(--font-Poppins);
     color: var(--color-primary);
@@ -447,6 +459,9 @@ p {
   }
   h2 {
     font-size: var(--font-h2-md);
+  }
+  h1 {
+    font-size: var(--font-h1-md);
   }
   p {
     font-size: var(--font-p-md);
