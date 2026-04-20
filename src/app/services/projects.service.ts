@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { ProjectModel } from '../models/projectModel';
-
+// import proyectosData from '../../../assets/data/datosProyectos.json';
 @Injectable({
   providedIn: 'root',
 })
@@ -12,5 +12,6 @@ export class ProjectsService {
 
   getProjects(): Observable<ProjectModel[]> {
     return this.http.get<ProjectModel[]>(this.apiUrl);
+    //  return of(proyectosData);
   }
 }
