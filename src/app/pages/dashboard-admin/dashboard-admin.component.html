@@ -6,9 +6,9 @@
   </div>
 } @else {
   <section class="estadisticas">
-    <section class="chart-section chart-trigger">
+    <section class="chart-section">
       <app-bar-char
-        title="Proyectos por Tipo"
+        title="PAGES.DASHBOARD_ADMIN.CHARS.TYPE"
         [labels]="typeLabels"
         [values]="typeValues"
         [colors]="['#b455a0', '#9c4dcc', '#7c4dff']"
@@ -16,29 +16,12 @@
       </app-bar-char>
     </section>
 
-    <section class="chart-section chart-trigger">
+    <section class="chart-section">
       <app-bar-char
-        title="Proyectos por Empresa"
-        [labels]="companyLabels"
-        [values]="companyValues"
-        [colors]="['#ff9800', '#ffc107', '#ffeb3b', '#cddc39']"
-      >
-      </app-bar-char>
-    </section>
-
-    <section class="chart-section chart-trigger">
-      <app-bar-char
-        title="Top Tecnologías Utilizadas"
+        title="PAGES.DASHBOARD_ADMIN.CHARS.TECH"
         [labels]="techLabels"
         [values]="techValues"
-        [colors]="[
-          '#26a69a',
-          '#4db6ac',
-          '#80cbc4',
-          '#b2dfdb',
-          '#00897b',
-          '#00695c',
-        ]"
+        [colors]="['#ff9800', '#ffc107', '#ffeb3b', '#cddc39']"
       >
       </app-bar-char>
     </section>
