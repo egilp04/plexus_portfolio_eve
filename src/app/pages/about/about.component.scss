@@ -66,6 +66,11 @@
   opacity: 0.85;
 }
 
+.timeline-container {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 480px) {
   .about {
     gap: var(--gap-30);

@@ -11,5 +11,15 @@
         <img [src]="tech.icon" [alt]="tech.name" [matTooltip]="tech.name" />
       </div>
     }
+    @for (tech of this.data; track $index) {
+      <div class="tech-item" aria-hidden="true">
+        <img [src]="tech.icon" [alt]="tech.name" [matTooltip]="tech.name" />
+      </div>
+    }
+    @for (tech of this.data; track $index) {
+      <div class="tech-item" aria-hidden="true">
+        <img [src]="tech.icon" [alt]="tech.name" [matTooltip]="tech.name" />
+      </div>
+    }
   </div>
 </div>

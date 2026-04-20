@@ -11,6 +11,7 @@ export class ProjectsService {
   private http = inject(HttpClient);
 
   getProjects(): Observable<ProjectModel[]> {
+    console.log("observando")
     return this.http.get<ProjectModel[]>(this.apiUrl);
     //  return of(proyectosData);
   }

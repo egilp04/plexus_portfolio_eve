@@ -10,6 +10,7 @@
     </p>
   </header>
 
+<div class="timeline-container">  
   <div class="timeline">
     @for (key of timelineKeys; track key) {
       <div class="timeline-item" #timelineItem>
@@ -22,6 +23,7 @@
       </div>
     }
   </div>
+</div>
 
   <div class="stack-tecnolgico">
     <app-carrousel [data]="techStack"></app-carrousel>
