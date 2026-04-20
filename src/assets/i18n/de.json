@@ -6,7 +6,8 @@
     "PROJECTS": "Projekte",
     "LOGIN": "Anmelden",
     "DASHBOARD_ADMIN": "Statistik",
-    "CLOSESESION": "Abmelden"
+    "CLOSESESION": "Abmelden",
+    "REGISTER": "Registrieren"
   },
   "SELECT": {
     "TITLE": "Wähle eine Option"
@@ -149,6 +150,31 @@
         "TYPE": "Nach Statistiken",
         "TECH": "Nach Technologien"
       }
+    },
+    "REGISTER": {
+      "TITLE": "Registrieren",
+      "INPUTS": {
+        "NAME": "Username",
+        "PASSWORD": "Password"
+      },
+      "ERROR": {
+        "NAME": "Invalid username format. Please check and try again.",
+        "PASSWORD": "Invalid password format. Please check and try again."
+      },
+      "BUTTON": {
+        "SEND": "Registrieren"
+      }
+    }
+  },
+  "AUTH": {
+    "REGISTER": {
+      "SUCCESS": "Registrierung erfolgreich abgeschlossen!",
+      "EMAIL_EXISTS": "Die E-Mail-Adresse ist bereits registriert.",
+      "INVALID_FIELDS": "Einige Felder sind ungültig."
+    },
+    "LOGIN": {
+      "INVALID_FIELDS": "Einige Felder sind ungültig.",
+      "ERROR": "Falscher Benutzername und/oder falsches Passwort"
     }
   }
 }

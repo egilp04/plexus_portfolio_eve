@@ -6,6 +6,7 @@
     "PROJECTS": "Proyectos",
     "LOGIN": "Iniciar sesión",
     "DASHBOARD_ADMIN": "Estadísticas",
+    "REGISTER": "Registarse",
     "CLOSESESION": "Cerrar sesión"
   },
   "SELECT": {
@@ -144,6 +145,31 @@
         "TYPE": "Por stack",
         "TECH": "Por tecnología"
       }
+    },
+    "REGISTER": {
+      "TITLE": "Registrarse",
+      "INPUTS": {
+        "NAME": "Nombre de usuario",
+        "PASSWORD": "Contraseña",
+        "EMAIL": "Correo electrónico"
+      },
+      "ERROR": {
+        "NAME": "Error con el nombre de usuario, checa el formato",
+        "PASSWORD": "Error con la contraseña, chequea el formato",
+        "EMAIL": "Error con el formato del email"
+      },
+      "BUTTON": { "SEND": "Registarse" }
+    }
+  },
+  "AUTH": {
+    "REGISTER": {
+      "SUCCESS": "¡Registro completado con éxito!",
+      "EMAIL_EXISTS": "El correo electrónico ya está registrado.",
+      "INVALID_FIELDS": "Hay campos inválidos."
+    },
+    "LOGIN": {
+      "INVALID_FIELDS": "Hay campos inválidos.",
+      "ERROR": "Usuario y/o credenciales incorrectas"
     }
   }
 }

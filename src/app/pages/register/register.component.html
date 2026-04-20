@@ -1,5 +1,5 @@
 <div class="page">
-  <h1>{{ "PAGES.LOGIN.TITLE" | translate | titlecase }}</h1>
+  <h1>{{ "PAGES.REGISTER.TITLE" | translate | titlecase }}</h1>
 
   <form
     [formGroup]="profileForm"
@@ -8,7 +8,7 @@
   >
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>
-        {{ "PAGES.LOGIN.INPUTS.NAME" | translate }}
+        {{ "PAGES.REGISTER.INPUTS.NAME" | translate }}
       </mat-label>
 
       <input
@@ -23,14 +23,35 @@
         profileForm.get("firstName")?.invalid
       ) {
         <mat-error class="custom-error">
-          {{ "PAGES.LOGIN.ERROR.NAME" | translate }}
+          {{ "PAGES.REGISTER.ERROR.NAME" | translate }}
         </mat-error>
       }
     </mat-form-field>
 
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>
-        {{ "PAGES.LOGIN.INPUTS.PASSWORD" | translate }}
+        {{ "PAGES.REGISTER.INPUTS.EMAIL" | translate }}
+      </mat-label>
+
+      <input
+        matInput
+        type="text"
+        formControlName="email"
+        autocomplete="username"
+      />
+
+      @if (
+        profileForm.get("email")?.touched && profileForm.get("email")?.invalid
+      ) {
+        <mat-error class="custom-error">
+          {{ "PAGES.REGISTER.ERROR.EMAIL" | translate }}
+        </mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>
+        {{ "PAGES.REGISTER.INPUTS.PASSWORD" | translate }}
       </mat-label>
 
       <input
@@ -45,13 +66,13 @@
         profileForm.get("password")?.invalid
       ) {
         <mat-error class="custom-error">
-          {{ "PAGES.LOGIN.ERROR.PASSWORD" | translate }}
+          {{ "PAGES.REGISTER.ERROR.PASSWORD" | translate }}
         </mat-error>
       }
     </mat-form-field>
 
     <button type="submit">
-      {{ "PAGES.LOGIN.BUTTON.SEND" | translate }}
+      {{ "PAGES.REGISTER.BUTTON.SEND" | translate }}
     </button>
   </form>
 </div>

@@ -22,6 +22,7 @@ import { MatInputModule } from '@angular/material/input';
 import datosSelectProject from '../../../assets/data/datosSelectProject.json';
 import { DatosSelectModel } from '../../models/datosSelectModel';
 import { ProjectModel } from '../../models/projectModel';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-project',
@@ -31,6 +32,7 @@ import { ProjectModel } from '../../models/projectModel';
     SelectComponentComponent,
     MatFormFieldModule,
     MatInputModule,
+    FormsModule,
   ],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss',
@@ -39,8 +41,6 @@ import { ProjectModel } from '../../models/projectModel';
 export class ProjectComponent implements OnInit {
   private projectService = inject(ProjectsService);
   projectsList = signal<ProjectModel[]>([]);
-  @ViewChildren('projectCard') cards!: QueryList<ElementRef>;
-  @ViewChild('filterName') filterName!: ElementRef<HTMLInputElement>;
   @ViewChild('typeFilter') typeFilter!: ElementRef<HTMLSelectElement>;
   datosSelect: DatosSelectModel[] = datosSelectProject;
 
@@ -55,7 +55,6 @@ export class ProjectComponent implements OnInit {
     this.projectService.getProjects().subscribe({
       next: (data) => {
         this.projectsList.set(data);
-        setTimeout(() => this.startAnimationGsap(), 0);
       },
       error: (error) => {
         console.error('Error al cargar los proyectos:', error);
@@ -63,27 +62,9 @@ export class ProjectComponent implements OnInit {
     });
   }
 
-  startAnimationGsap() {
-    const elements = this.cards.map((card) => card.nativeElement);
-    gsap.from(elements, {
-      opacity: 0,
-      y: 30,
-      scale: 0.95,
-      duration: 2,
-      stagger: 0.1,
-      ease: 'power3.out',
-    });
-  }
-
   resetFilters() {
     this.name.set('');
     this.typeProject.set('');
-    this.filterName.nativeElement.innerHTML = '';
-  }
-
-  updateName(event: Event) {
-    const valor = event.target as HTMLInputElement;
-    this.name.set(valor.value);
   }
 
   updateTypeProjectFilter(valorSeleccionado: string) {

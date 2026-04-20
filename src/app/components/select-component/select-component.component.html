@@ -1,7 +1,10 @@
 <mat-form-field appearance="outline" class="full-width">
   <mat-label>{{ "SELECT.TITLE" | translate }}</mat-label>
-  <mat-select (selectionChange)="onSelect($event)">
-    <mat-option [value]="">{{
+  <mat-select
+    [ngModel]="valorSeleccionado"
+    (selectionChange)="onSelect($event)"
+  >
+    <mat-option value="">{{
       "PAGES.PROJECTS.FILTER.ALL" | translate
     }}</mat-option>
     @for (dato of datos; track dato) {

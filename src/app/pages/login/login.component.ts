@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { SessionService } from '../../services/session.service';
 import { AuthService } from '../../services/auth.service';
 import { TitleCasePipe } from '@angular/common';
@@ -29,6 +29,7 @@ export class LoginComponent {
   private sessionService = inject(SessionService);
   private authService = inject(AuthService);
   private router = inject(Router);
+  private translate = inject(TranslateService);
 
   profileForm = this.formBuilder.nonNullable.group({
     firstName: ['', Validators.required],
@@ -37,7 +38,9 @@ export class LoginComponent {
 
   onSubmit() {
     if (this.profileForm.invalid) {
-      alert('Hay campos inválidos');
+      this.translate
+        .get('AUTH.LOGIN.INVALID_FIELDS')
+        .subscribe((res) => alert(res));
       return;
     }
 
@@ -48,7 +51,11 @@ export class LoginComponent {
       )
       .subscribe((res) => {
         if (!res) {
-          alert('Usuario o contraseña incorrectos');
+          this.translate
+            .get('AUTH.LOGIN.ERROR')
+            .subscribe((mensajeTraducido) => {
+              alert(mensajeTraducido);
+            });
           return;
         }
         this.sessionService.iniciarSesion(res, res.token);

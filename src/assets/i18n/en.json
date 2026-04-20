@@ -6,6 +6,7 @@
     "PROJECTS": "Projects",
     "LOGIN": "Log in",
     "DASHBOARD_ADMIN": "Statistics",
+    "REGISTER": "Register",
     "CLOSESESION": "Close session"
   },
   "SELECT": {
@@ -147,6 +148,31 @@
         "TYPE": "By stack",
         "TECH": "By technology"
       }
+    },
+    "REGISTER": {
+      "TITLE": "Register",
+      "INPUTS": {
+        "NAME": "Username",
+        "PASSWORD": "Password"
+      },
+      "ERROR": {
+        "NAME": "Invalid username format. Please check and try again.",
+        "PASSWORD": "Invalid password format. Please check and try again."
+      },
+      "BUTTON": {
+        "SEND": "Register"
+      }
+    }
+  },
+  "AUTH": {
+    "REGISTER": {
+      "SUCCESS": "Registration successfully completed!",
+      "EMAIL_EXISTS": "This email is already registered.",
+      "INVALID_FIELDS": "There are invalid fields."
+    },
+    "LOGIN": {
+      "INVALID_FIELDS": "There are invalid fields.",
+      "ERROR": "Wrong user and/or password"
     }
   }
 }

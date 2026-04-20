@@ -104,9 +104,9 @@
       "type": "fullstack",
       "company": "Plexus Tech",
       "technologies": ["CSS", "JS", "Tailwind"],
-      "image": "assets/img/projects/fonsaex.webp",
+      "image": "assets/img/projects/tallerCrafteo.webp",
       "year": 2025,
-      "url": "https://github.com/egilp04/fonsaex.git"
+      "url": "https://github.com/egilp04/Taller_Maincraft.git"
     },
     {
       "id": "10",
@@ -116,9 +116,9 @@
       "type": "fullstack",
       "company": "Plexus Tech",
       "technologies": ["Tailwind", "Gsap", "JS"],
-      "image": "assets/img/projects/fonsaex.webp",
+      "image": "assets/img/projects/gsap.webp",
       "year": 2025,
-      "url": "https://github.com/egilp04/fonsaex.git"
+      "url": "https://github.com/egilp04/Evelia_Gil_Paredes_Gsap.git"
     },
     {
       "id": "11",

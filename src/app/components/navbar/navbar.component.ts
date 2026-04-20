@@ -56,7 +56,12 @@ export class NavbarComponent implements OnInit {
         label: 'NAV.LOGIN',
         routerLink: '/login',
       });
+      baseItems.push({
+        label: 'NAV.REGISTER',
+        routerLink: '/register',
+      });
     }
+    
     if (this.userService.userOfSession()?.rol === 'admin') {
       baseItems.push({
         label: 'NAV.DASHBOARD_ADMIN',

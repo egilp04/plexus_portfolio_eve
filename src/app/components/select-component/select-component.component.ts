@@ -1,4 +1,11 @@
-import { Component, EventEmitter, inject, Inject, Input, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  inject,
+  Inject,
+  Input,
+  Output,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectChange, MatSelectModule } from '@angular/material/select';
@@ -22,6 +29,7 @@ import { DatosSelectModel } from '../../models/datosSelectModel';
 export class SelectComponentComponent {
   @Input() datos: DatosSelectModel[] = [];
   @Output() selectionChange = new EventEmitter<string>();
+  @Input() valorSeleccionado: string = '';
 
   onSelect(event: MatSelectChange) {
     const value = event.value ?? '';

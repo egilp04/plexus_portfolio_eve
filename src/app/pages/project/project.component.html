@@ -3,10 +3,16 @@
   <div class="filter-container">
     <mat-form-field appearance="outline" class="full-width">
       <mat-label>{{ "PAGES.PROJECTS.FILTER.INPUT" | translate }}</mat-label>
-      <input matInput type="text" (input)="updateName($event)" />
+      <input
+        matInput
+        type="text"
+        [ngModel]="name()"
+        (ngModelChange)="name.set($event)"
+      />
     </mat-form-field>
     <app-select-component
       [datos]="datosSelect"
+      [valorSeleccionado]="typeProject()"
       (selectionChange)="updateTypeProjectFilter($event)"
     >
     </app-select-component>
@@ -19,7 +25,7 @@
 <section class="projects-container">
   <div class="projects-grid">
     @for (project of filteredProjects(); track project.id) {
-      <app-card #projectCard [project]="project"> </app-card>
+      <app-card [project]="project"> </app-card>
     }
     @if (filteredProjects().length <= 0) {
       <p>No se han encontrado proyectos con esos filtros.</p>
