@@ -34,32 +34,22 @@ export class ChatSupportComponent implements AfterViewInit, OnDestroy {
 
   toggleChat() {
     this.isOpen = !this.isOpen;
-
-    gsap.to(this.chatBox.nativeElement, {
-      opacity: this.isOpen ? 1 : 0,
-      scale: this.isOpen ? 1 : 0.95,
-      y: this.isOpen ? 0 : 20,
-      duration: 0.3,
-      ease: 'power3.out',
-    });
   }
 
   sendMessage(e: Event) {
     e.preventDefault();
     if (!this.message.trim()) return;
-
     this.ws.send({
       type: 'chat',
       payload: this.message,
     });
-
     this.messages.push('Tú: ' + this.message);
     this.message = '';
   }
 
   listenMessages() {
     this.ws.listen().subscribe((msg) => {
-      if (msg.type === 'chat' || msg.type === 'notificacion') {
+      if (msg.type === 'notificacion') {
         this.messages.push('Soporte: ' + msg.payload);
       }
     });
@@ -67,9 +57,8 @@ export class ChatSupportComponent implements AfterViewInit, OnDestroy {
 
   initMouseFollow() {
     const setX = gsap.quickSetter(this.chatFab.nativeElement, 'x', 'px');
-
     window.addEventListener('mousemove', (e) => {
-      setX((e.clientX - window.innerWidth) * 0.01);
+      setX((e.clientX - window.innerWidth) * 0.1);
     });
   }
 

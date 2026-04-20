@@ -1,9 +1,11 @@
 {
   "name": "portfolio-eve",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:ws": "node ws-server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

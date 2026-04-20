@@ -9,21 +9,20 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--color-primary);
+  background: var(--color-accent);
   color: white;
   font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .chat-box {
   position: absolute;
   bottom: 70px;
   right: 0;
-  width: 300px;
   height: 380px;
   background: #111;
   border-radius: 12px;
@@ -54,7 +53,7 @@
 }
 
 .msg {
-  background: #222;
+  color: var(--color-primary);
   padding: 8px 10px;
   border-radius: 8px;
   margin-bottom: 8px;

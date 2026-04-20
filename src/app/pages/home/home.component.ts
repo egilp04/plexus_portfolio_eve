@@ -13,9 +13,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 import { gsap } from 'gsap';
+import { ChatSupportComponent } from "../../components/chat-support/chat-support.component";
 @Component({
   selector: 'app-home',
-  imports: [TranslateModule, MatIconModule, MatButtonModule],
+  imports: [TranslateModule, MatIconModule, MatButtonModule, ChatSupportComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   standalone: true,
@@ -58,4 +59,6 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
       this.mm.revert();
     }
   }
+
+
 }
