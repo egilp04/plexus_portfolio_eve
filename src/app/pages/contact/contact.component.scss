@@ -4,11 +4,9 @@ main {
   align-items: center;
   text-align: center;
 }
-
 h1 {
   font-size: var(--font-h1-sm);
 }
-
 .form-container {
   display: flex;
   flex-direction: column;
@@ -16,19 +14,16 @@ h1 {
   width: 100%;
   padding: var(--padding-30) 0px;
 }
-
 .formulario-divs {
   display: flex;
   flex-direction: column;
   gap: var(--gap-4);
   text-align: left;
 }
-
 .formulario-divs label {
   font-size: var(--font-label-sm);
   color: var(--color-primary);
 }
-
 .contact-input {
   width: 100%;
   padding: var(--padding-10);
@@ -37,45 +32,43 @@ h1 {
   background-color: transparent;
   color: var(--color-primary);
 }
-
 .contact-input::placeholder {
   color: var(--color-secondary);
 }
-
 .text-red-800 {
   font-size: var(--font-label-sm);
   color: var(--color-accent);
 }
-
 .form-container button {
   margin-top: var(--margin-20);
   align-self: center;
   border-radius: var(--border-radius-input);
   border: none;
-
   background-color: var(--color-primary);
   color: var(--color-base);
   font-size: var(--font-button-md);
   cursor: pointer;
 }
-
 @media (min-width: 480px) {
   h1 {
     font-size: var(--font-h1-md);
   }
+  .formulario-divs label {
+    font-size: var(--font-label-md);
+  }
 }
-
 @media (min-width: 1200px) {
   h1 {
     font-size: var(--font-h1-lg);
   }
-
   .form-container {
     gap: var(--gap-50);
   }
-
   .form-container > button {
     grid-area: submit;
     justify-self: center;
+  }
+  .formulario-divs label {
+    font-size: var(--font-label-lg);
   }
 }

@@ -2,7 +2,6 @@ import { TitleCasePipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-
 @Component({
   selector: 'app-contact',
   imports: [ReactiveFormsModule, TranslateModule, TitleCasePipe],
@@ -12,17 +11,18 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ContactComponent {
   private formBuilder = inject(FormBuilder);
-  profileForm = this.formBuilder.group({
+  contactForm = this.formBuilder.group({
     firstName: ['', Validators.required],
     lastName: ['', Validators.required],
-    address: ['', [Validators.required, Validators.minLength(4)]],
+    email: ['', [Validators.required, Validators.email]],
+    message: ['', [Validators.required, Validators.minLength(4)]],
   });
-
   onSubmit() {
-    if (this.profileForm.invalid) {
+    if (this.contactForm.invalid) {
       alert('hay campos invalidos');
       return;
     }
     alert('Enviado!!!');
+    this.contactForm.reset();
   }
 }

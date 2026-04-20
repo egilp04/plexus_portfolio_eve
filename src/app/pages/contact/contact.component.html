@@ -1,6 +1,5 @@
 <h1>{{ "PAGES.CONTACT.TITLE" | translate | titlecase }}</h1>
-
-<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="form-container">
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form-container">
   <div class="formulario-divs">
     <label for="firstName">{{ "PAGES.CONTACT.INPUTS.NAME" | translate }}</label>
     <input
@@ -12,13 +11,12 @@
       [placeholder]="'PAGES.CONTACT.INPUTS.NAME' | translate"
     />
     @if (
-      profileForm.get("firstName")?.touched &&
-      profileForm.get("firstName")?.invalid
+      contactForm.get("firstName")?.touched &&
+      contactForm.get("firstName")?.invalid
     ) {
       <p>{{ "PAGES.CONTACT.ERROR.NAME" | translate }}</p>
     }
   </div>
-
   <div class="formulario-divs">
     <label for="lastName">{{
       "PAGES.CONTACT.INPUTS.SURNAME" | translate
@@ -32,36 +30,46 @@
       class="contact-input"
     />
     @if (
-      profileForm.get("lastName")?.touched &&
-      profileForm.get("lastName")?.invalid
+      contactForm.get("lastName")?.touched &&
+      contactForm.get("lastName")?.invalid
     ) {
-      <p>
-        {{ "PAGES.CONTACT.ERROR.SURNAME" | translate }}
-      </p>
+      <p>{{ "PAGES.CONTACT.ERROR.SURNAME" | translate }}</p>
     }
   </div>
-
   <div class="formulario-divs">
-    <label for="address">{{
+    <label for="email">{{
       "PAGES.CONTACT.INPUTS.DIRECTION" | translate
     }}</label>
     <input
       type="text"
-      formControlName="address"
+      formControlName="email"
       autocomplete="off"
-      id="address"
+      id="email"
       [placeholder]="'PAGES.CONTACT.INPUTS.DIRECTION' | translate"
       class="contact-input"
     />
     @if (
-      profileForm.get("address")?.touched && profileForm.get("address")?.invalid
+      contactForm.get("email")?.touched && contactForm.get("email")?.invalid
     ) {
-      <p>
-        {{ "PAGES.CONTACT.ERROR.DIRECTION" | translate }}
-      </p>
+      <p>{{ "PAGES.CONTACT.ERROR.DIRECTION" | translate }}</p>
     }
   </div>
-  <button type="submit">
-    {{ "PAGES.CONTACT.BUTTON.SEND" | translate }}
-  </button>
+  <div class="formulario-divs">
+    <label for="message">{{
+      "PAGES.CONTACT.INPUTS.MESSAGE" | translate
+    }}</label>
+    <textarea
+      formControlName="message"
+      id="message"
+      [placeholder]="'PAGES.CONTACT.INPUTS.MESSAGE' | translate"
+      class="contact-input"
+    >
+    </textarea>
+    @if (
+      contactForm.get("message")?.touched && contactForm.get("message")?.invalid
+    ) {
+      <p>{{ "PAGES.CONTACT.ERROR.MESSAGE" | translate }}</p>
+    }
+  </div>
+  <button type="submit">{{ "PAGES.CONTACT.BUTTON.SEND" | translate }}</button>
 </form>

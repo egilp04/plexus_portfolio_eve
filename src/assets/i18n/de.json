@@ -118,16 +118,16 @@
       "INPUTS": {
         "NAME": "Vorname",
         "SURNAME": "Nachname",
-        "DIRECTION": "Adresse"
+        "DIRECTION": "Email",
+        "MESSAGE": "Nachrichtentext"
       },
       "ERROR": {
-        "NAME": "Bitte Format überprüfen",
-        "SURNAME": "Bitte Format überprüfen",
-        "DIRECTION": "Bitte Format überprüfen"
+        "NAME": "Dieses Feld darf nicht leer sein",
+        "SURNAME": "Dieses Feld darf nicht leer sein",
+        "EMAIL": "Bitte überprüfen Sie das E-Mail-Format",
+        "MESSAGE": "Dieses Feld darf nicht leer sein"
       },
-      "BUTTON": {
-        "SEND": "Daten senden"
-      }
+      "BUTTON": { "SEND": "Daten senden" }
     },
     "LOGIN": {
       "TITLE": "anmelden",

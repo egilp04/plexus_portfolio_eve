@@ -117,16 +117,17 @@
       "INPUTS": {
         "NAME": "Name",
         "SURNAME": "Surname",
-        "DIRECTION": "Direction"
+        "DIRECTION": "Email",
+        "MESSAGE": "Message"
       },
       "ERROR": {
-        "NAME": "Check the format",
-        "SURNAME": "Check the format",
-        "DIRECTION": "Check the direction format"
+        "NAME": "This field cannot be left empty",
+        "SURNAME": "This field cannot be left empty",
+        "EMAIL": "Check the email format",
+        "MESSAGE": "This field cannot be left empty"
       },
       "BUTTON": { "SEND": "Send Data" }
     },
-
     "LOGIN": {
       "TITLE": "Login",
       "INPUTS": {

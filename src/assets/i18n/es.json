@@ -117,12 +117,14 @@
       "INPUTS": {
         "NAME": "Nombre",
         "SURNAME": "Apellidos",
-        "DIRECTION": "Dirección"
+        "DIRECTION": "Correo electrónico",
+        "MESSAGE": "Mensaje"
       },
       "ERROR": {
-        "NAME": "Comprueba el formato",
-        "SURNAME": "Comprueba el formato",
-        "DIRECTION": "Comprueba el formato"
+        "NAME": "Este campo no se puede quedar vacío",
+        "SURNAME": "Este campo no se puede quedar vacío",
+        "EMAIL": "Comprueba el formato del email",
+        "MESSAGE": "Este campo no se puede quedar vacío"
       },
       "BUTTON": { "SEND": "Enviar Datos" }
     },
