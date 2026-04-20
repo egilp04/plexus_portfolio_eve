@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Juan Jesus",
-      "email": "juan_jesus@mail.com",
+      "email": "juan_jesus@gmail.com",
       "token": "JJ-token",
       "password": "456",
       "rol": "usuario"
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "name": "Eve",
-      "email": "eve@mail.com",
+      "email": "eve@gmail.com",
       "password": "123",
       "token": "eve-token",
       "rol": "admin"
