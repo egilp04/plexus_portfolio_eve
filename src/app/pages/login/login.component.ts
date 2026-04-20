@@ -5,11 +5,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { SessionService } from '../../services/session.service';
 import { AuthService } from '../../services/auth.service';
 import { TitleCasePipe } from '@angular/common';
-
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-
 @Component({
   selector: 'app-login',
   imports: [
@@ -30,12 +28,10 @@ export class LoginComponent {
   private authService = inject(AuthService);
   private router = inject(Router);
   private translate = inject(TranslateService);
-
   profileForm = this.formBuilder.nonNullable.group({
     firstName: ['', Validators.required],
     password: ['', Validators.required],
   });
-
   onSubmit() {
     if (this.profileForm.invalid) {
       this.translate
@@ -43,7 +39,6 @@ export class LoginComponent {
         .subscribe((res) => alert(res));
       return;
     }
-
     this.authService
       .login(
         this.profileForm.controls.firstName.value,
@@ -60,6 +55,10 @@ export class LoginComponent {
         }
         this.sessionService.iniciarSesion(res, res.token);
         this.profileForm.reset();
+        if (this.sessionService.userOfSession()?.rol === 'admin') {
+          this.router.navigate(['/dashboard']);
+          return;
+        }
         this.router.navigate(['/home']);
       });
   }
