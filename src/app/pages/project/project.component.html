@@ -22,13 +22,15 @@
   </button>
 </div>
 <section class="projects-container">
-  @for (project of filteredProjects(); track project.id) {
-    <div class="projects-grid"><app-card [project]="project"> </app-card></div>
-    >
-  }
-  @if (filteredProjects().length <= 0) {
-    <div class="no-projects">
-      <p>No se han encontrado proyectos con esos filtros.</p>
-    </div>
-  }
+  <div class="projects-grid">
+    @for (project of filteredProjects(); track project.id) {
+      <app-card [project]="project"></app-card>
+    }
+
+    @if (filteredProjects().length === 0) {
+      <p class="no-projects">
+        No se han encontrado proyectos con esos filtros.
+      </p>
+    }
+  </div>
 </section>
