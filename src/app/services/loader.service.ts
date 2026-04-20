@@ -5,13 +5,20 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class LoaderService {
+  private activeRequests = 0;
   private _loading$ = new BehaviorSubject<boolean>(false);
   loading$ = this._loading$.asObservable();
+
   show() {
+    this.activeRequests++;
     this._loading$.next(true);
   }
 
   hide() {
-    this._loading$.next(false);
+    this.activeRequests--;
+    if (this.activeRequests <= 0) {
+      this.activeRequests = 0; // sin números negativos
+      this._loading$.next(false);
+    }
   }
 }

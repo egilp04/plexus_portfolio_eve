@@ -1,7 +1,6 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { LoaderService } from '../../services/loader.service';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { AsyncPipe } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ProjectModel } from '../../models/projectModel';
 import { ProjectsService } from '../../services/projects.service';
@@ -9,12 +8,7 @@ import { BarCharComponent } from '../../components/bar-char/bar-char.component';
 
 @Component({
   selector: 'app-dashboard-admin',
-  imports: [
-    MatProgressSpinnerModule,
-    AsyncPipe,
-    TranslateModule,
-    BarCharComponent,
-  ],
+  imports: [MatProgressSpinnerModule, TranslateModule, BarCharComponent],
   templateUrl: './dashboard-admin.component.html',
   styleUrl: './dashboard-admin.component.scss',
   standalone: true,
@@ -30,18 +24,21 @@ export class DashboardAdminComponent implements OnInit {
   techLabels: string[] = [];
   techValues: number[] = [];
 
+  isDataReady = signal(false);
+
   ngOnInit(): void {
     this.projectService.getProjects().subscribe({
       next: (data) => {
         this.projectsList = data;
         this.calculateStats();
+        this.isDataReady.set(true);
       },
       error: (error) => {
-        console.error('Error al cargar los proyectos:', error);
+        console.error('Error:', error);
+        this.isDataReady.set(true);
       },
     });
   }
-
   calculateStats() {
     console.log(this.projectsList);
     const typeCount = this.projectsList.reduce(

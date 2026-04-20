@@ -1,7 +1,7 @@
 <h1>{{ "PAGES.DASHBOARD_ADMIN.TITLE" | translate }}</h1>
-@if (loaderService.loading$ | async) {
+@if (!isDataReady()) {
   <div class="cargando-estadisticas">
-    <mat-spinner diameter="50"></mat-spinner>
+    <mat-spinner diameter="100"></mat-spinner>
     <p>{{ "PAGES.DASHBOARD_ADMIN.CHARGING" | translate }}</p>
   </div>
 } @else {

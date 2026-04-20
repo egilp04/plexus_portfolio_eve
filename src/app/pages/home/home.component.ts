@@ -7,16 +7,23 @@ import {
   PLATFORM_ID,
   inject,
   OnDestroy,
+  viewChild,
+  ElementRef,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 import { gsap } from 'gsap';
-import { ChatSupportComponent } from "../../components/chat-support/chat-support.component";
+import { ChatSupportComponent } from '../../components/chat-support/chat-support.component';
 @Component({
   selector: 'app-home',
-  imports: [TranslateModule, MatIconModule, MatButtonModule, ChatSupportComponent],
+  imports: [
+    TranslateModule,
+    MatIconModule,
+    MatButtonModule,
+    ChatSupportComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   standalone: true,
@@ -24,6 +31,8 @@ import { ChatSupportComponent } from "../../components/chat-support/chat-support
 export class HomeComponent implements AfterViewInit, OnDestroy {
   userSession = inject(SessionService);
   private mm!: gsap.MatchMedia;
+
+  CardsGrid = viewChild<ElementRef>('CardsGrid');
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
@@ -44,14 +53,30 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
         const tlDesktop = gsap.timeline();
         tlDesktop.from('.hero-section', {
           opacity: 0,
-          x: -100,
-          rotation: -5,
-          duration: 1,
+          x: 1000,
+          duration: 1.5,
           stagger: 0.2,
           ease: 'back.out(1.5)',
         });
       });
     }
+
+    const container = this.CardsGrid()?.nativeElement;
+    if (!container) return;
+    const cards = container.querySelectorAll('.feature-card');
+    const tl = gsap.timeline();
+    tl.fromTo(
+      cards,
+      { opacity: 0, x: 1000 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: 'power2.out',
+        clearProps: 'all',
+      },
+    );
   }
 
   ngOnDestroy(): void {
@@ -59,6 +84,4 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
       this.mm.revert();
     }
   }
-
-
 }
