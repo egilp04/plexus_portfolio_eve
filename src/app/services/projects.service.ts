@@ -7,7 +7,7 @@ import { ProjectModel } from '../models/projectModel';
   providedIn: 'root',
 })
 export class ProjectsService {
-  private apiUrl = 'http://localhost:3001/projects';
+  private apiUrl = 'http://localhost:3000/projects';
   private http = inject(HttpClient);
 
   getProjects(): Observable<ProjectModel[]> {
