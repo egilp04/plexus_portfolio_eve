@@ -69,46 +69,42 @@
       },
       "CARDPROJECTS": {
         "01": {
-          "subtitle": "Enterprise Web Platform",
-          "description": "Enterprise dashboard for monitoring internal metrics and real-time data visualization."
+          "SUBTITLE": "Media collection management app",
+          "DESCRIPTION": "Digital platform designed to store, organize, and manage collections of books and video games. It allows users to register titles, categories, and statuses, providing easy access and control through an intuitive interface."
         },
         "02": {
-          "subtitle": "Backend Service",
-          "description": "REST API for managing translation projects, linguist assignments, and automated workflows."
+          "SUBTITLE": "3D reconstruction of the Roman aqueduct of Mérida",
+          "DESCRIPTION": "Three-dimensional model of the Aqueduct of the Miracles, one of the most representative Roman engineering works in Mérida. The project recreates its structure, proportions, and materials using Blender, with the aim of studying its architecture and applying 3D rendering techniques."
         },
-        "03": {
+        "08": {
           "subtitle": "Frontend Application",
           "description": "Figma design project focused on creating a web page layout."
         },
-        "04": {
-          "subtitle": "Fullstack Web Application",
-          "description": "E-commerce platform with shopping cart, simulated payment gateway, and admin panel."
-        },
-        "05": {
+        "06": {
           "subtitle": "Countdown Timer",
           "description": "Countdown timer that tracks time remaining until a specific date."
         },
-        "06": {
-          "subtitle": "API Integration",
-          "description": "Interactive weather dashboard consuming the OpenWeatherMap API with a 7-day forecast."
-        },
         "07": {
+          "SUBTITLE": "Computer products store",
+          "DESCRIPTION": "Web-based online store dedicated to the sale of computer products. It features a technology product catalog with detailed information and a user-oriented interface."
+        },
+        "09": {
           "subtitle": "CSS Prototype",
           "description": "CSS prototype based on the corporate website of Fonsaex."
         },
-        "08": {
+        "10": {
           "subtitle": "Kanban Prototype",
           "description": "Design and layout of a Kanban board inspired by real-world tools."
         },
-        "09": {
+        "03": {
           "subtitle": "Craft Workshop Project",
           "description": "Web project focused on presenting a craft workshop with a modern, responsive design."
         },
-        "10": {
+        "04": {
           "subtitle": "Experimental GSAP Project",
           "description": "Project focused on advanced animations, transitions, and visual effects to enhance user experience."
         },
-        "11": {
+        "05": {
           "subtitle": "Simple JavaScript Game",
           "description": "Game with basic mechanics, event handling, and state management implemented in JavaScript."
         }

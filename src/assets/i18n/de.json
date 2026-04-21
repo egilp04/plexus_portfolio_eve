@@ -69,46 +69,42 @@
       },
       "CARDPROJECTS": {
         "01": {
-          "subtitle": "Enterprise-Webplattform",
-          "description": "Unternehmens-Dashboard zur Überwachung interner Kennzahlen und Echtzeit-Datenvisualisierung."
+          "SUBTITLE": "Verwaltungsanwendung für Mediensammlungen",
+          "DESCRIPTION": "Digitale Plattform zur Speicherung, Organisation und Verwaltung von Buch- und Videospielsammlungen. Sie ermöglicht die Erfassung von Titeln, Kategorien und Status und bietet eine intuitive Benutzeroberfläche zur einfachen Verwaltung."
         },
         "02": {
-          "subtitle": "Backend-Dienst",
-          "description": "REST-API zur Verwaltung von Übersetzungsprojekten, Linguistenzuweisung und automatisierten Workflows."
+          "SUBTITLE": "3D-Rekonstruktion des römischen Aquädukts von Mérida",
+          "DESCRIPTION": "Dreidimensionales Modell des Aquädukts der Wunder, eines der bedeutendsten Werke römischer Ingenieurskunst in Mérida. Das Projekt rekonstruiert Struktur, Proportionen und Materialien mit Blender, um die Architektur zu analysieren und 3D-Rendertechniken anzuwenden."
         },
-        "03": {
+        "08": {
           "subtitle": "Frontend-Anwendung",
           "description": "Designprojekt in Figma zur Erstellung eines Webseitenlayouts."
         },
-        "04": {
-          "subtitle": "Fullstack-Webanwendung",
-          "description": "E-Commerce-Plattform mit Warenkorb, simulierter Zahlungsabwicklung und Administrationsbereich."
-        },
-        "05": {
+        "06": {
           "subtitle": "Countdown-Timer",
           "description": "Countdown-Timer, der die verbleibende Zeit bis zu einem bestimmten Datum anzeigt."
         },
-        "06": {
-          "subtitle": "API-Integration",
-          "description": "Interaktives Wetter-Dashboard mit OpenWeatherMap-API und 7-Tage-Vorhersage."
-        },
         "07": {
+          "SUBTITLE": "Shop für Computerprodukte",
+          "DESCRIPTION": "Webbasierte Online-Plattform für den Verkauf von Computerprodukten. Sie bietet einen Katalog technologischer Artikel mit detaillierten Informationen und einer benutzerfreundlichen Oberfläche."
+        },
+        "09": {
           "subtitle": "CSS-Prototyp",
           "description": "CSS-Prototyp basierend auf der Unternehmenswebsite von Fonsaex."
         },
-        "08": {
+        "10": {
           "subtitle": "Kanban-Prototyp",
           "description": "Design und Layout eines Kanban-Boards, inspiriert von realen Tools."
         },
-        "09": {
+        "03": {
           "subtitle": "Projekt über eine Kreativwerkstatt",
           "description": "Webprojekt zur Präsentation einer Kreativwerkstatt mit modernem und responsivem Design."
         },
-        "10": {
+        "04": {
           "subtitle": "Experimentelles GSAP-Projekt",
           "description": "Projekt mit Fokus auf fortgeschrittene Animationen, Übergänge und visuelle Effekte."
         },
-        "11": {
+        "05": {
           "subtitle": "Einfaches JavaScript-Spiel",
           "description": "Spiel mit grundlegenden Spielmechaniken, Ereignissteuerung und Zustandsverwaltung in JavaScript."
         }

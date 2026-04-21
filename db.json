@@ -2,105 +2,40 @@
   "projects": [
     {
       "id": "01",
-      "title": "Plexus Analytics Dashboard",
+      "title": "ListO",
       "subtitle": "PAGES.PROJECTS.CARDPROJECTS.01.SUBTITLE",
       "description": "PAGES.PROJECTS.CARDPROJECTS.01.DESCRIPTION",
       "type": "fullstack",
       "company": "Plexus Tech",
-      "technologies": ["Angular", "TypeScript", "SCSS", "REST API", "Chart.js"],
-      "image": "assets/img/projects/plexus-dashboard.jpg",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "SCSS",
+        "REST API",
+        "Chart.js",
+        "Tailwind"
+      ],
+      "image": "assets/img/projects/listO.png",
       "year": 2024,
-      "url": "https://github.com/"
+      "url": "https://github.com/egilp04/listO"
     },
     {
       "id": "02",
-      "title": "Translation Management API",
+      "title": "Acueducto los Milagros",
       "subtitle": "PAGES.PROJECTS.CARDPROJECTS.02.SUBTITLE",
       "description": "PAGES.PROJECTS.CARDPROJECTS.02.DESCRIPTION",
       "type": "backend",
       "company": "Freelance",
-      "technologies": ["Node.js", "Express", "MongoDB", "JWT"],
-      "image": "assets/img/projects/api.jpg",
+      "technologies": ["Blender", "Tailwind", "Gsap"],
+      "image": "assets/img/projects/disenioBlender.png",
       "year": 2023,
-      "url": "https://github.com/"
+      "url": "https://github.com/egilp04/tarea_disenio_3D"
     },
     {
       "id": "03",
-      "title": "Figma Tarea",
+      "title": "Taller Crafteo",
       "subtitle": "PAGES.PROJECTS.CARDPROJECTS.03.SUBTITLE",
       "description": "PAGES.PROJECTS.CARDPROJECTS.03.DESCRIPTION",
-      "type": "frontend",
-      "company": "Personal",
-      "technologies": ["Figma"],
-      "image": "assets/img/projects/projectFigma.webp",
-      "year": 2024,
-      "url": "https://www.figma.com/design/noRXbdm6jtmAm7e83a6XBF/fonsaex?node-id=0-1&t=WcnixNbnUSaQVX0D-1"
-    },
-    {
-      "id": "04",
-      "title": "E-commerce Platform",
-      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.04.SUBTITLE",
-      "description": "PAGES.PROJECTS.CARDPROJECTS.04.DESCRIPTION",
-      "type": "fullstack",
-      "company": "Academic Project",
-      "technologies": ["Angular", "Spring Boot", "MySQL", "Hibernate"],
-      "image": "assets/img/projects/ecommerce-java.jpg",
-      "year": 2022,
-      "url": "https://github.com/"
-    },
-    {
-      "id": "05",
-      "title": "Cronómetro",
-      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.05.SUBTITLE",
-      "description": "PAGES.PROJECTS.CARDPROJECTS.05.DESCRIPTION",
-      "type": "backend",
-      "company": "Personal",
-      "technologies": ["Node.js", "Puppeteer", "Docker"],
-      "image": "assets/img/projects/cronometro.webp",
-      "year": 2024,
-      "url": "https://github.com/egilp04/cronometro_cliente.gi"
-    },
-    {
-      "id": "06",
-      "title": "Smart Weather Dashboard",
-      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.06.SUBTITLE",
-      "description": "PAGES.PROJECTS.CARDPROJECTS.06.DESCRIPTION",
-      "type": "frontend",
-      "company": "Personal",
-      "technologies": ["Angular", "RxJS", "OpenWeather API"],
-      "image": "assets/img/projects/weather-widget.jpg",
-      "year": 2023,
-      "url": "https://github.com/"
-    },
-    {
-      "id": "07",
-      "title": "Fonsaex",
-      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.07.SUBTITLE",
-      "description": "PAGES.PROJECTS.CARDPROJECTS.07.DESCRIPTION",
-      "type": "fullstack",
-      "company": "Plexus Tech",
-      "technologies": ["CSS"],
-      "image": "assets/img/projects/fonsaex.webp",
-      "year": 2024,
-      "url": "https://github.com/egilp04/fonsaex.git"
-    },
-    {
-      "id": "08",
-      "title": "Kanban",
-      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.08.SUBTITLE",
-      "description": "PAGES.PROJECTS.CARDPROJECTS.08.DESCRIPTION",
-      "type": "fullstack",
-      "company": "Plexus Tech",
-      "technologies": ["CSS"],
-      "image": "assets/img/projects/kanban.webp",
-      "year": 2025,
-      "url": "https://github.com/egilp04/kanban_disenio_2dawB.git"
-    },
-    {
-      "id": "09",
-      "title": "Taller Crafteo",
-      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.09.SUBTITLE",
-      "description": "PAGES.PROJECTS.CARDPROJECTS.09.DESCRIPTION",
       "type": "fullstack",
       "company": "Plexus Tech",
       "technologies": ["CSS", "JS", "Tailwind"],
@@ -109,10 +44,10 @@
       "url": "https://github.com/egilp04/Taller_Maincraft.git"
     },
     {
-      "id": "10",
+      "id": "04",
       "title": "Animaciones Gsap",
-      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.10.SUBTITLE",
-      "description": "PAGES.PROJECTS.CARDPROJECTS.10.DESCRIPTION",
+      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.04.SUBTITLE",
+      "description": "PAGES.PROJECTS.CARDPROJECTS.04.DESCRIPTION",
       "type": "fullstack",
       "company": "Plexus Tech",
       "technologies": ["Tailwind", "Gsap", "JS"],
@@ -121,16 +56,76 @@
       "url": "https://github.com/egilp04/Evelia_Gil_Paredes_Gsap.git"
     },
     {
-      "id": "11",
+      "id": "05",
       "title": "Juego: Aventura JS",
-      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.11.SUBTITLE",
-      "description": "PAGES.PROJECTS.CARDPROJECTS.11.DESCRIPTION",
+      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.05.SUBTITLE",
+      "description": "PAGES.PROJECTS.CARDPROJECTS.05.DESCRIPTION",
       "type": "fullstack",
       "company": "Plexus Tech",
       "technologies": ["Tailwind", "Gsap", "JS"],
       "image": "assets/img/projects/aventura_JS.webp",
       "year": 2025,
       "url": "https://github.com/egilp04/juego_cliente_RPG.git"
+    },
+    {
+      "id": "06",
+      "title": "Cronómetro",
+      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.06.SUBTITLE",
+      "description": "PAGES.PROJECTS.CARDPROJECTS.06.DESCRIPTION",
+      "type": "backend",
+      "company": "Personal",
+      "technologies": ["Node.js", "Puppeteer", "Docker"],
+      "image": "assets/img/projects/cronometro.webp",
+      "year": 2024,
+      "url": "https://github.com/egilp04/cronometro_cliente.gi"
+    },
+    {
+      "id": "07",
+      "title": "CoreLogic tienda",
+      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.07.SUBTITLE",
+      "description": "PAGES.PROJECTS.CARDPROJECTS.07.DESCRIPTION",
+      "type": "fullstack",
+      "company": "Plexus Tech",
+      "technologies": ["SCSS", "REST API", "Tomcat", "JSP"],
+      "image": "assets/img/projects/coreLogic.png",
+      "year": 2024,
+      "url": "https://github.com/egilp04/core_logic"
+    },
+    {
+      "id": "08",
+      "title": "Figma Tarea",
+      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.08.SUBTITLE",
+      "description": "PAGES.PROJECTS.CARDPROJECTS.08.DESCRIPTION",
+      "type": "frontend",
+      "company": "Personal",
+      "technologies": ["Figma"],
+      "image": "assets/img/projects/projectFigma.webp",
+      "year": 2024,
+      "url": "https://www.figma.com/design/noRXbdm6jtmAm7e83a6XBF/fonsaex?node-id=0-1&t=WcnixNbnUSaQVX0D-1"
+    },
+    {
+      "id": "09",
+      "title": "Fonsaex",
+      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.09.SUBTITLE",
+      "description": "PAGES.PROJECTS.CARDPROJECTS.09.DESCRIPTION",
+      "type": "fullstack",
+      "company": "Plexus Tech",
+      "technologies": ["CSS", "JS"],
+      "image": "assets/img/projects/fonsaex.webp",
+      "year": 2024,
+      "url": "https://github.com/egilp04/fonsaex.git"
+    },
+    {
+      "id": "10",
+      "title": "Kanban",
+      "subtitle": "PAGES.PROJECTS.CARDPROJECTS.10.SUBTITLE",
+      "description": "PAGES.PROJECTS.CARDPROJECTS.10.DESCRIPTION",
+      "type": "fullstack",
+      "company": "Plexus Tech",
+      "technologies": ["CSS", "JS"],
+      "image": "assets/img/projects/kanban.webp",
+      "year": 2025,
+      "url": "https://github.com/egilp04/kanban_disenio_2dawB.git"
     }
   ]
 }

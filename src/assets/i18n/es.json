@@ -69,46 +69,43 @@
       },
       "CARDPROJECTS": {
         "01": {
-          "SUBTITLE": "Plataforma Web Empresarial",
-          "DESCRIPTION": "Dashboard empresarial para monitorización de métricas internas y visualización de datos en tiempo real."
+          "SUBTITLE": "Aplicación de gestión multimedia",
+          "DESCRIPTION": "Plataforma digital diseñada para almacenar, organizar y gestionar colecciones de libros y videojuegos. Permite registrar títulos, categorías y estados, facilitando el control y la consulta del contenido desde una interfaz intuitiva."
         },
         "02": {
-          "SUBTITLE": "Servicio Backend",
-          "DESCRIPTION": "API REST para la gestión de proyectos de traducción, asignación de lingüistas y flujos de trabajo automatizados."
+          "SUBTITLE": "Reconstrucción 3D del acueducto romano de Mérida",
+          "DESCRIPTION": "Modelo tridimensional del Acueducto de los Milagros, una de las obras de ingeniería romana más representativas de Mérida. El proyecto recrea su estructura, proporciones y materiales utilizando Blender, con el objetivo de estudiar su arquitectura y aplicar técnicas de renderizado en 3D."
         },
-        "03": {
+        "08": {
           "SUBTITLE": "Aplicación Frontend",
           "DESCRIPTION": "Proyecto de diseño en Figma basado en el desarrollo de una página web."
         },
-        "04": {
-          "SUBTITLE": "Aplicación Web Fullstack",
-          "DESCRIPTION": "Plataforma de comercio electrónico con carrito de compras, pasarela de pago simulada y panel de administración."
-        },
-        "05": {
+        "06": {
           "SUBTITLE": "Cronómetro",
           "DESCRIPTION": "Contador que realiza una cuenta atrás hasta una fecha concreta."
         },
-        "06": {
-          "SUBTITLE": "Integración de API",
-          "DESCRIPTION": "Dashboard meteorológico interactivo que consume la API de OpenWeatherMap con previsión a 7 días."
-        },
+
         "07": {
+          "SUBTITLE": "Tienda de productos informáticos",
+          "DESCRIPTION": "Plataforma web tipo tienda online dedicada a la venta de productos informáticos. Permite visualizar un catálogo de artículos tecnológicos, mostrando información detallada y una interfaz orientada al usuario."
+        },
+        "09": {
           "SUBTITLE": "Prototipo CSS",
           "DESCRIPTION": "Prototipo desarrollado en CSS basado en la web corporativa de Fonsaex."
         },
-        "08": {
+        "10": {
           "SUBTITLE": "Prototipo Kanban",
           "DESCRIPTION": "Diseño y maquetación de un tablero Kanban inspirado en herramientas reales."
         },
-        "09": {
+        "03": {
           "SUBTITLE": "Proyecto sobre un taller de crafteo",
           "DESCRIPTION": "Proyecto web enfocado en la presentación de un taller de crafteo con diseño moderno y responsive."
         },
-        "10": {
+        "04": {
           "SUBTITLE": "Proyecto experimental con GSAP",
           "DESCRIPTION": "Proyecto centrado en animaciones avanzadas, transiciones y efectos visuales para mejorar la experiencia de usuario."
         },
-        "11": {
+        "05": {
           "SUBTITLE": "Videojuego sencillo en JavaScript",
           "DESCRIPTION": "Videojuego con mecánicas básicas, control de eventos y gestión de estados mediante JavaScript."
         }
