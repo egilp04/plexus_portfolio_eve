@@ -76,6 +76,13 @@
     font-size: var(--font-h1-md);
   }
 }
+
+@media (min-width: 1023px) {
+  .form-container button {
+    font-size: var(--font-button-lg);
+  }
+}
+
 @media (min-width: 1200px) {
   .page h1 {
     font-size: var(--font-h1-lg);
