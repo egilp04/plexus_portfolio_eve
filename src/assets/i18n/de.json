@@ -73,28 +73,8 @@
           "DESCRIPTION": "Digitale Plattform zur Speicherung, Organisation und Verwaltung von Buch- und Videospielsammlungen. Sie ermöglicht die Erfassung von Titeln, Kategorien und Status und bietet eine intuitive Benutzeroberfläche zur einfachen Verwaltung."
         },
         "02": {
-          "SUBTITLE": "3D-Rekonstruktion des römischen Aquädukts von Mérida",
+          "SUBTITLE": "3D-Rekonstruktion des Aquädukts von Mérida",
           "DESCRIPTION": "Dreidimensionales Modell des Aquädukts der Wunder, eines der bedeutendsten Werke römischer Ingenieurskunst in Mérida. Das Projekt rekonstruiert Struktur, Proportionen und Materialien mit Blender, um die Architektur zu analysieren und 3D-Rendertechniken anzuwenden."
-        },
-        "08": {
-          "subtitle": "Frontend-Anwendung",
-          "description": "Designprojekt in Figma zur Erstellung eines Webseitenlayouts."
-        },
-        "06": {
-          "subtitle": "Countdown-Timer",
-          "description": "Countdown-Timer, der die verbleibende Zeit bis zu einem bestimmten Datum anzeigt."
-        },
-        "07": {
-          "SUBTITLE": "Shop für Computerprodukte",
-          "DESCRIPTION": "Webbasierte Online-Plattform für den Verkauf von Computerprodukten. Sie bietet einen Katalog technologischer Artikel mit detaillierten Informationen und einer benutzerfreundlichen Oberfläche."
-        },
-        "09": {
-          "subtitle": "CSS-Prototyp",
-          "description": "CSS-Prototyp basierend auf der Unternehmenswebsite von Fonsaex."
-        },
-        "10": {
-          "subtitle": "Kanban-Prototyp",
-          "description": "Design und Layout eines Kanban-Boards, inspiriert von realen Tools."
         },
         "03": {
           "subtitle": "Projekt über eine Kreativwerkstatt",
@@ -107,6 +87,26 @@
         "05": {
           "subtitle": "Einfaches JavaScript-Spiel",
           "description": "Spiel mit grundlegenden Spielmechaniken, Ereignissteuerung und Zustandsverwaltung in JavaScript."
+        },
+        "06": {
+          "subtitle": "Countdown-Timer",
+          "description": "Countdown-Timer, der die verbleibende Zeit bis zu einem bestimmten Datum anzeigt."
+        },
+        "07": {
+          "SUBTITLE": "Shop für Computerprodukte",
+          "DESCRIPTION": "Webbasierte Online-Plattform für den Verkauf von Computerprodukten. Sie bietet einen Katalog technologischer Artikel mit detaillierten Informationen und einer benutzerfreundlichen Oberfläche."
+        },
+        "08": {
+          "subtitle": "Frontend-Anwendung",
+          "description": "Designprojekt in Figma zur Erstellung eines Webseitenlayouts."
+        },
+        "09": {
+          "subtitle": "CSS-Prototyp",
+          "description": "CSS-Prototyp basierend auf der Unternehmenswebsite von Fonsaex."
+        },
+        "10": {
+          "subtitle": "Kanban-Prototyp",
+          "description": "Design und Layout eines Kanban-Boards, inspiriert von realen Tools."
         }
       }
     },

@@ -76,27 +76,6 @@
           "SUBTITLE": "Reconstrucción 3D del acueducto romano de Mérida",
           "DESCRIPTION": "Modelo tridimensional del Acueducto de los Milagros, una de las obras de ingeniería romana más representativas de Mérida. El proyecto recrea su estructura, proporciones y materiales utilizando Blender, con el objetivo de estudiar su arquitectura y aplicar técnicas de renderizado en 3D."
         },
-        "08": {
-          "SUBTITLE": "Aplicación Frontend",
-          "DESCRIPTION": "Proyecto de diseño en Figma basado en el desarrollo de una página web."
-        },
-        "06": {
-          "SUBTITLE": "Cronómetro",
-          "DESCRIPTION": "Contador que realiza una cuenta atrás hasta una fecha concreta."
-        },
-
-        "07": {
-          "SUBTITLE": "Tienda de productos informáticos",
-          "DESCRIPTION": "Plataforma web tipo tienda online dedicada a la venta de productos informáticos. Permite visualizar un catálogo de artículos tecnológicos, mostrando información detallada y una interfaz orientada al usuario."
-        },
-        "09": {
-          "SUBTITLE": "Prototipo CSS",
-          "DESCRIPTION": "Prototipo desarrollado en CSS basado en la web corporativa de Fonsaex."
-        },
-        "10": {
-          "SUBTITLE": "Prototipo Kanban",
-          "DESCRIPTION": "Diseño y maquetación de un tablero Kanban inspirado en herramientas reales."
-        },
         "03": {
           "SUBTITLE": "Proyecto sobre un taller de crafteo",
           "DESCRIPTION": "Proyecto web enfocado en la presentación de un taller de crafteo con diseño moderno y responsive."
@@ -108,6 +87,27 @@
         "05": {
           "SUBTITLE": "Videojuego sencillo en JavaScript",
           "DESCRIPTION": "Videojuego con mecánicas básicas, control de eventos y gestión de estados mediante JavaScript."
+        },
+        "06": {
+          "SUBTITLE": "Cronómetro",
+          "DESCRIPTION": "Contador que realiza una cuenta atrás hasta una fecha concreta."
+        },
+
+        "07": {
+          "SUBTITLE": "Tienda de productos informáticos",
+          "DESCRIPTION": "Plataforma web tipo tienda online dedicada a la venta de productos informáticos. Permite visualizar un catálogo de artículos tecnológicos, mostrando información detallada y una interfaz orientada al usuario."
+        },
+        "08": {
+          "SUBTITLE": "Aplicación Frontend",
+          "DESCRIPTION": "Proyecto de diseño en Figma basado en el desarrollo de una página web."
+        },
+        "09": {
+          "SUBTITLE": "Prototipo CSS",
+          "DESCRIPTION": "Prototipo desarrollado en CSS basado en la web corporativa de Fonsaex."
+        },
+        "10": {
+          "SUBTITLE": "Prototipo Kanban",
+          "DESCRIPTION": "Diseño y maquetación de un tablero Kanban inspirado en herramientas reales."
         }
       }
     },

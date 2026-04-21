@@ -76,26 +76,6 @@
           "SUBTITLE": "3D reconstruction of the Roman aqueduct of Mérida",
           "DESCRIPTION": "Three-dimensional model of the Aqueduct of the Miracles, one of the most representative Roman engineering works in Mérida. The project recreates its structure, proportions, and materials using Blender, with the aim of studying its architecture and applying 3D rendering techniques."
         },
-        "08": {
-          "subtitle": "Frontend Application",
-          "description": "Figma design project focused on creating a web page layout."
-        },
-        "06": {
-          "subtitle": "Countdown Timer",
-          "description": "Countdown timer that tracks time remaining until a specific date."
-        },
-        "07": {
-          "SUBTITLE": "Computer products store",
-          "DESCRIPTION": "Web-based online store dedicated to the sale of computer products. It features a technology product catalog with detailed information and a user-oriented interface."
-        },
-        "09": {
-          "subtitle": "CSS Prototype",
-          "description": "CSS prototype based on the corporate website of Fonsaex."
-        },
-        "10": {
-          "subtitle": "Kanban Prototype",
-          "description": "Design and layout of a Kanban board inspired by real-world tools."
-        },
         "03": {
           "subtitle": "Craft Workshop Project",
           "description": "Web project focused on presenting a craft workshop with a modern, responsive design."
@@ -107,6 +87,26 @@
         "05": {
           "subtitle": "Simple JavaScript Game",
           "description": "Game with basic mechanics, event handling, and state management implemented in JavaScript."
+        },
+        "06": {
+          "subtitle": "Countdown Timer",
+          "description": "Countdown timer that tracks time remaining until a specific date."
+        },
+        "07": {
+          "SUBTITLE": "Computer products store",
+          "DESCRIPTION": "Web-based online store dedicated to the sale of computer products. It features a technology product catalog with detailed information and a user-oriented interface."
+        },
+        "08": {
+          "subtitle": "Frontend Application",
+          "description": "Figma design project focused on creating a web page layout."
+        },
+        "09": {
+          "subtitle": "CSS Prototype",
+          "description": "CSS prototype based on the corporate website of Fonsaex."
+        },
+        "10": {
+          "subtitle": "Kanban Prototype",
+          "description": "Design and layout of a Kanban board inspired by real-world tools."
         }
       }
     },
