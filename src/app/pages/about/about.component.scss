@@ -14,6 +14,10 @@
   background-color: var(--color-base);
 }
 
+.about-intro p {
+  text-align: start;
+}
+
 .timeline {
   position: relative;
   padding: var(--padding-32) 0;
