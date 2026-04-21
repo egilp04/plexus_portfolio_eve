@@ -28,3 +28,15 @@
   gap: var(--gap-20);
   margin-top: var(--margin-20);
 }
+
+@media (min-width: 480px) {
+  .estadisticas {
+    margin-top: var(--margin-50);
+  }
+}
+
+@media (min-width: 1023px) {
+  .estadisticas {
+    margin-top: var(--margin-60);
+  }
+}

@@ -1,4 +1,8 @@
 .title {
-  color: var(--color-primary);
+  color: var(--color-base);
   padding: var(--padding-10);
+  background-color: var(--color-primary);
+}
+canvas {
+  background-color: var(--color-primary);
 }
