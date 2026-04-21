@@ -19,12 +19,7 @@
   </mat-card-content>
   <mat-card-actions class="card-actions">
     @if (userService.userSesion()) {
-      <a
-        mat-button
-        [href]="project.url"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a [href]="project.url" target="_blank" rel="noopener noreferrer">
         <img src="assets/icons/github.png" alt="GitHub" class="img-url" />
       </a>
     }
