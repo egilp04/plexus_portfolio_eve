@@ -4,10 +4,11 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { MenuItem } from 'primeng/api';
 import { MenuModule } from 'primeng/menu';
 import { SessionService } from '../../services/session.service';
+import { DarkModeComponent } from "../dark-mode/dark-mode.component";
 
 @Component({
   selector: 'app-navbar',
-  imports: [MenuModule, TranslateModule, RouterLink, RouterLinkActive],
+  imports: [MenuModule, TranslateModule, RouterLink, RouterLinkActive, DarkModeComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
   standalone: true,

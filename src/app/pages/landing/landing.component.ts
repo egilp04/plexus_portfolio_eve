@@ -45,7 +45,7 @@ export class LandingComponent implements AfterViewInit {
         ease: 'power3.out',
       })
       .from(
-        '.landing-section-2',
+        '.landing-section-2, .landing-section-3',
         {
           x: -30,
           opacity: 0,
@@ -53,17 +53,6 @@ export class LandingComponent implements AfterViewInit {
           ease: 'power2.out',
         },
         '-=0.4',
-      )
-      .from(
-        '.social-links a',
-        {
-          scale: 0,
-          opacity: 0,
-          duration: 0.5,
-          stagger: 0.1,
-          ease: 'back.out(1.7)',
-        },
-        '-=0.2',
       );
   }
 

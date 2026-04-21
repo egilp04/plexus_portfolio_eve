@@ -7,7 +7,8 @@
     "LOGIN": "Log in",
     "DASHBOARD_ADMIN": "Statistics",
     "REGISTER": "Register",
-    "CLOSESESION": "Close session"
+    "CLOSESESION": "Close session",
+    "CHANGETHEME": "Changte theme"
   },
   "SELECT": {
     "TITLE": "Choose an option"

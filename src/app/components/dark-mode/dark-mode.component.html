@@ -1,0 +1,8 @@
+<mat-slide-toggle
+  (click)="toggle()"
+  #themeBtn
+  aria-label="Cambiar tema"
+  [checked]="themeService.theme() === 'dark'"
+>
+  <mat-icon>{{ "dark_mode" }}</mat-icon></mat-slide-toggle
+>

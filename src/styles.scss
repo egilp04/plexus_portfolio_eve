@@ -6,7 +6,6 @@
   --color-secondary: #ead0ee;
   --color-accent: #eaaef2;
   --color-disabled: #a2a7a7;
-  --color-card: #fedafd;
 
   --font-Poppins: "Poppins", sans-serif;
   --font-Fraunces: "Fraunces", serif;
@@ -43,20 +42,6 @@
   --border-radius-input: 0.5rem;
 
   --letter-spacing-05: 0.03125rem;
-
-  --font-nav-sm: 0.75rem;
-  --font-nav-md: 1rem;
-  --font-nav-lg: 1.25rem;
-  --line-height-nav-sm: 1.5rem;
-  --line-height-nav-md: 1.75rem;
-  --line-height-nav-lg: 1.875rem;
-
-  --font-footer-sm: 0.875rem;
-  --font-footer-md: 1.25rem;
-  --font-footer-lg: 1.5rem;
-  --line-height-footer-sm: 1rem;
-  --line-height-footer-md: 1.25rem;
-  --line-height-footer-lg: 1.5rem;
 
   --font-span-sm: 0.75rem;
   --font-span-md: 1rem;
@@ -502,7 +487,7 @@ html {
 
 html,
 body {
-  cursor: none !important; 
+  cursor: none !important;
 }
 
 a,
@@ -510,4 +495,10 @@ button,
 input,
 [role="button"] {
   cursor: none !important;
+}
+
+[data-theme="dark"] {
+  --color-base: #080409;
+  --color-disabled: #a2a7a7;
+  --color-accent: #ff00c3;
 }
