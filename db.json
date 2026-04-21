@@ -15,7 +15,7 @@
         "Chart.js",
         "Tailwind"
       ],
-      "image": "assets/img/projects/listO.png",
+      "image": "assets/img/projects/listO.webp",
       "year": 2024,
       "url": "https://github.com/egilp04/listO"
     },
@@ -27,7 +27,7 @@
       "type": "backend",
       "company": "Freelance",
       "technologies": ["Blender", "Tailwind", "Gsap"],
-      "image": "assets/img/projects/disenioBlender.png",
+      "image": "assets/img/projects/disenioBlender.webp",
       "year": 2023,
       "url": "https://github.com/egilp04/tarea_disenio_3D"
     },
@@ -87,7 +87,7 @@
       "type": "fullstack",
       "company": "Plexus Tech",
       "technologies": ["SCSS", "REST API", "Tomcat", "JSP"],
-      "image": "assets/img/projects/coreLogic.png",
+      "image": "assets/img/projects/coreLogic.webp",
       "year": 2024,
       "url": "https://github.com/egilp04/core_logic"
     },
