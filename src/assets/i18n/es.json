@@ -27,7 +27,8 @@
       "PROJECTS_TITLE": "Proyectos",
       "PROJECTS_DESC": "Explora mis últimos desarrollos (Frontend, Backend y Fullstack). En cada uno podrás ver las tecnologías aplicadas y acceder directamente al código en GitHub.",
       "CONTACT_TITLE": "Contacto",
-      "CONTACT_DESC": "¿Tienes un proyecto en mente o buscas un perfil híbrido para tu equipo? Tienes todas las vías para hablar conmigo."
+      "CONTACT_DESC": "¿Tienes un proyecto en mente o buscas un perfil híbrido para tu equipo? Tienes todas las vías para hablar conmigo.",
+      "DOWNLOAD_CV": "Descargar CV"
     },
     "ABOUT": {
       "TITLE": "Trayectoria",

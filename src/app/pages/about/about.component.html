@@ -9,20 +9,30 @@
     </p>
   </header>
 
-<div class="timeline-container">  
-  <div class="timeline">
-    @for (key of timelineKeys; track key) {
-      <div class="timeline-item" #timelineItem>
-        <div class="item-content">
-          <span class="date">{{
-            "PAGES.ABOUT.TIMELINE." + key + ".DATE" | translate
-          }}</span>
-          <p>{{ "PAGES.ABOUT.TIMELINE." + key + ".TEXT" | translate }}</p>
+  <div class="timeline-container">
+    <div class="timeline">
+      @for (key of timelineKeys; track key) {
+        <div class="timeline-item" #timelineItem>
+          <div class="item-content">
+            <span class="date">{{
+              "PAGES.ABOUT.TIMELINE." + key + ".DATE" | translate
+            }}</span>
+            <p>{{ "PAGES.ABOUT.TIMELINE." + key + ".TEXT" | translate }}</p>
+          </div>
         </div>
-      </div>
-    }
+      }
+    </div>
   </div>
-</div>
+  <div class="btn-cv-container">
+    <a
+      href="assets/docs/tu-cv.pdf"
+      download="Nombre_Apellido_CV.pdf"
+      mat-raised-button
+      class="cv-download-btn"
+    >
+      {{ "PAGES.HOME.DOWNLOAD_CV" | translate }}
+    </a>
+  </div>
 
   <div class="stack-tecnolgico">
     <app-carrousel [data]="techStack"></app-carrousel>

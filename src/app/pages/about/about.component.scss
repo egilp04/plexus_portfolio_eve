@@ -20,8 +20,8 @@
 
 .timeline {
   position: relative;
-  padding: var(--padding-32) 0;
 }
+
 .timeline::before {
   content: "";
   position: absolute;
@@ -75,13 +75,34 @@
   justify-content: center;
 }
 
+.btn-cv-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-download-btn {
+  font-size: var(--font-but);
+  box-shadow: 0 4px 15px var(--color-primary);
+  transition: all 0.3s ease;
+  padding: var(--padding-10) var(--padding-30);
+  border-radius: var(--border-radius-input);
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-base);
+  font-size: var(--font-button-md);
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 41, 117, 0.6);
+  }
+}
+
 @media (min-width: 480px) {
   .about {
     gap: var(--gap-30);
-  }
-
-  .timeline {
-    padding: var(--padding-40) 0;
   }
 
   .timeline-item {
@@ -90,6 +111,12 @@
 
   .timeline-item .date {
     font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .cv-download-btn {
+    font-size: var(--font-button-lg);
   }
 }
 
@@ -126,10 +153,6 @@
 }
 
 @media (min-width: 1600px) {
-  .timeline {
-    padding: var(--padding-80) 0;
-  }
-
   .timeline-item {
     margin-bottom: var(--margin-60);
   }
