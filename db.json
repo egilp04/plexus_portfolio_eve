@@ -17,7 +17,8 @@
       ],
       "image": "assets/img/projects/listO.webp",
       "year": 2024,
-      "url": "https://github.com/egilp04/listO"
+      "url": "https://github.com/egilp04/listO",
+      "live": "https://list-o.vercel.app/"
     },
     {
       "id": "02",
@@ -29,7 +30,8 @@
       "technologies": ["Blender", "Tailwind", "Gsap"],
       "image": "assets/img/projects/disenioBlender.webp",
       "year": 2023,
-      "url": "https://github.com/egilp04/tarea_disenio_3D"
+      "url": "https://github.com/egilp04/tarea_disenio_3D",
+      "live": "https://tarea-disenio-3-d.vercel.app/"
     },
     {
       "id": "03",
@@ -41,7 +43,8 @@
       "technologies": ["CSS", "JS", "Tailwind"],
       "image": "assets/img/projects/tallerCrafteo.webp",
       "year": 2025,
-      "url": "https://github.com/egilp04/Taller_Maincraft.git"
+      "url": "https://github.com/egilp04/Taller_Maincraft.git",
+      "live": "https://egilp04.github.io/Taller_Crafteo/"
     },
     {
       "id": "04",
@@ -53,7 +56,8 @@
       "technologies": ["Tailwind", "Gsap", "JS"],
       "image": "assets/img/projects/gsap.webp",
       "year": 2025,
-      "url": "https://github.com/egilp04/Evelia_Gil_Paredes_Gsap.git"
+      "url": "https://github.com/egilp04/Evelia_Gil_Paredes_Gsap.git",
+      "live": "https://egilp04.github.io/Evelia_Gil_Paredes_Gsap/"
     },
     {
       "id": "05",
@@ -65,7 +69,8 @@
       "technologies": ["Tailwind", "Gsap", "JS"],
       "image": "assets/img/projects/aventura_JS.webp",
       "year": 2025,
-      "url": "https://github.com/egilp04/juego_cliente_RPG.git"
+      "url": "https://github.com/egilp04/juego_cliente_RPG.git",
+      "live": "https://egilp04.github.io/juego_cliente_RPG/"
     },
     {
       "id": "06",
@@ -89,7 +94,8 @@
       "technologies": ["SCSS", "REST API", "Tomcat", "JSP"],
       "image": "assets/img/projects/coreLogic.webp",
       "year": 2024,
-      "url": "https://github.com/egilp04/core_logic"
+      "url": "https://github.com/egilp04/core_logic",
+      "live": "http://informatica.iesalbarregas.com:7001/core_logic-1.0-SNAPSHOT/"
     },
     {
       "id": "08",
@@ -101,7 +107,8 @@
       "technologies": ["Figma"],
       "image": "assets/img/projects/projectFigma.webp",
       "year": 2024,
-      "url": "https://www.figma.com/design/noRXbdm6jtmAm7e83a6XBF/fonsaex?node-id=0-1&t=WcnixNbnUSaQVX0D-1"
+      "url": "https://www.figma.com/design/noRXbdm6jtmAm7e83a6XBF/fonsaex?node-id=0-1&t=WcnixNbnUSaQVX0D-1",
+      "live": "https://www.figma.com/design/noRXbdm6jtmAm7e83a6XBF/fonsaex?node-id=0-1&t=WcnixNbnUSaQVX0D-1"
     },
     {
       "id": "09",
@@ -113,7 +120,8 @@
       "technologies": ["CSS", "JS"],
       "image": "assets/img/projects/fonsaex.webp",
       "year": 2024,
-      "url": "https://github.com/egilp04/fonsaex.git"
+      "url": "https://github.com/egilp04/fonsaex.git",
+      "live": "https://egilp04.github.io/fonsaex/"
     },
     {
       "id": "10",
@@ -125,7 +133,8 @@
       "technologies": ["CSS", "JS"],
       "image": "assets/img/projects/kanban.webp",
       "year": 2025,
-      "url": "https://github.com/egilp04/kanban_disenio_2dawB.git"
+      "url": "https://github.com/egilp04/kanban_disenio_2dawB.git",
+      "live": "https://egilp04.github.io/kanban_disenio_2dawB/"
     }
   ]
 }

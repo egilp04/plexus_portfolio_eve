@@ -9,4 +9,5 @@ export interface ProjectModel {
   image: string;
   year: number;
   url: string;
+  live?: string;
 }
