@@ -17,7 +17,7 @@ export class LoaderService {
   hide() {
     this.activeRequests--;
     if (this.activeRequests <= 0) {
-      this.activeRequests = 0; // sin números negativos
+      this.activeRequests = 0; 
       this._loading$.next(false);
     }
   }
