@@ -40,7 +40,6 @@ export class DashboardAdminComponent implements OnInit {
     });
   }
   calculateStats() {
-    console.log(this.projectsList);
     const typeCount = this.projectsList.reduce(
       (acc: Record<string, number>, project) => {
         acc[project.type] = (acc[project.type] || 0) + 1;
