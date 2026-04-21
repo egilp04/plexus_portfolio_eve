@@ -13,27 +13,37 @@
   </div>
   <section class="landing-section-3 social-links">
     <a
+      #github
       href="https://github.com/egilp04"
       target="_blank"
       rel="noopener"
       aria-label="GitHub"
+      (mousemove)="activateMagnet($event, github)"
+      (mouseleave)="resetMagnet(github)"
     >
       <img src="assets/icons/github.png" alt="GitHub" />
     </a>
 
     <a
+      #linkedin
       href="https://www.linkedin.com/in/evelia-gil-paredes/"
       target="_blank"
       rel="noopener"
       aria-label="LinkedIn"
+      (mousemove)="activateMagnet($event, linkedin)"
+      (mouseleave)="resetMagnet(linkedin)"
     >
       <img src="assets/icons/linkedin.png" alt="Linkedin" />
     </a>
+
     <a
+      #instagram
       href="https://www.instagram.com/eeveenax"
       target="_blank"
       rel="noopener"
       aria-label="Instagram"
+      (mousemove)="activateMagnet($event, instagram)"
+      (mouseleave)="resetMagnet(instagram)"
     >
       <img src="assets/icons/instagram.png" alt="Instagram" />
     </a>

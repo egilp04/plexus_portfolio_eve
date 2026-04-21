@@ -499,3 +499,15 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #f9edf7 rgba(255, 255, 255, 0.05);
 }
+
+html,
+body {
+  cursor: none !important; 
+}
+
+a,
+button,
+input,
+[role="button"] {
+  cursor: none !important;
+}
