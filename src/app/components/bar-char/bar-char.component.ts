@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { ChartData, ChartOptions, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 import { MatCardTitle, MatCard } from '@angular/material/card';
@@ -12,10 +12,10 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './bar-char.component.scss',
 })
 export class BarCharComponent {
-  @Input() labels: string[] = [];
-  @Input() values: number[] = [];
-  @Input() title = '';
-  @Input() colors: string[] = [];
+  labels = input<string[]>([]);
+  values = input<number[]>([]);
+  title = input<string>('');
+  colors = input<string[]>([]);
 
   barChartType: ChartType = 'bar';
 
@@ -26,15 +26,13 @@ export class BarCharComponent {
     },
   };
 
-  get chartData(): ChartData<'bar'> {
-    return {
-      labels: this.labels,
-      datasets: [
-        {
-          data: this.values,
-          backgroundColor: this.colors,
-        },
-      ],
-    };
-  }
+  chartData = computed<ChartData<'bar'>>(() => ({
+    labels: this.labels(),
+    datasets: [
+      {
+        data: this.values(),
+        backgroundColor: this.colors(),
+      },
+    ],
+  }));
 }

@@ -1,4 +1,5 @@
 <h1>{{ "PAGES.DASHBOARD_ADMIN.TITLE" | translate }}</h1>
+
 @if (!isDataReady()) {
   <div class="cargando-estadisticas">
     <mat-spinner diameter="100"></mat-spinner>
@@ -9,21 +10,19 @@
     <section class="chart-section">
       <app-bar-char
         title="PAGES.DASHBOARD_ADMIN.CHARS.TYPE"
-        [labels]="typeLabels"
-        [values]="typeValues"
+        [labels]="typeStats().labels"
+        [values]="typeStats().values"
         [colors]="['#b455a0', '#9c4dcc', '#7c4dff']"
-      >
-      </app-bar-char>
+      />
     </section>
 
     <section class="chart-section">
       <app-bar-char
         title="PAGES.DASHBOARD_ADMIN.CHARS.TECH"
-        [labels]="techLabels"
-        [values]="techValues"
+        [labels]="techStats().labels"
+        [values]="techStats().values"
         [colors]="['#ff9800', '#ffc107', '#ffeb3b', '#cddc39']"
-      >
-      </app-bar-char>
+      />
     </section>
   </section>
 }
