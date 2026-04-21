@@ -31,13 +31,19 @@ export class LandingComponent implements AfterViewInit {
 
   private initEntranceAnimation() {
     const tl = gsap.timeline();
-    tl.from('.title-container h1, .subtitle, .landing-desc', {
-      y: 30,
+
+    tl.from('.title-container h1', {
+      letterSpacing: '10px',
       opacity: 0,
-      duration: 0.8,
-      stagger: 0.2,
-      ease: 'power3.out',
+      duration: 1.2,
     })
+      .from(' .subtitle, .landing-desc', {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: 'power3.out',
+      })
       .from(
         '.landing-section-2',
         {
