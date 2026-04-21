@@ -1,11 +1,24 @@
 <h1>{{ "PAGES.PROJECTS.TITLE" | translate }}</h1>
+
 @if (isLoading()) {
-  <div class="loader-container">
-    <div class="loader-content"><div class="spinner"></div></div>
+  <div class="skeleton-grid">
+    @for (item of [1, 2, 3, 4]; track $index) {
+      <div class="skeleton-card">
+        <div class="skeleton-img"></div>
+        <div class="skeleton-title"></div>
+        <div class="skeleton-text"></div>
+        <div class="skeleton-text"></div>
+        <div class="skeleton-tags">
+          <div class="skeleton-tag"></div>
+          <div class="skeleton-tag"></div>
+        </div>
+      </div>
+    }
   </div>
 }
+
 <section class="projects-container" [class.hidden]="isLoading()">
-  <div>
+  <div class="filter-section">
     <div class="filter-container">
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>{{ "PAGES.PROJECTS.FILTER.INPUT" | translate }}</mat-label>
@@ -27,16 +40,15 @@
       {{ "PAGES.PROJECTS.FILTER.RESET" | translate }}
     </button>
   </div>
-  <section class="projects-container">
-    <div class="projects-grid" #projectsGrid>
-      @for (project of filteredProjects(); track project.id) {
-        <div class="project-item">
-          <app-card [project]="project"></app-card>
-        </div>
-      }
-      @if (filteredProjects().length === 0) {
-        <p class="no-projects">No se han encontrado proyectos.</p>
-      }
-    </div>
-  </section>
+
+  <div class="projects-grid" #projectsGrid>
+    @for (project of filteredProjects(); track project.id) {
+      <div class="project-item">
+        <app-card [project]="project"></app-card>
+      </div>
+    }
+    @if (filteredProjects().length === 0) {
+      <p class="no-projects">No se han encontrado proyectos.</p>
+    }
+  </div>
 </section>
