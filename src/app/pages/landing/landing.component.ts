@@ -1,5 +1,11 @@
-import { UpperCasePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import {
+  Component,
+  AfterViewInit,
+  inject,
+  PLATFORM_ID,
+  Inject,
+} from '@angular/core';
+import { isPlatformBrowser, UpperCasePipe } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 
@@ -14,7 +20,47 @@ import gsap from 'gsap';
   styleUrl: './landing.component.scss',
   standalone: true,
 })
-export class LandingComponent {
+export class LandingComponent implements AfterViewInit {
+  private platformId = inject(PLATFORM_ID);
+
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      this.initEntranceAnimation();
+    }
+  }
+
+  private initEntranceAnimation() {
+    const tl = gsap.timeline();
+    tl.from('.title-container h1, .subtitle, .landing-desc', {
+      y: 30,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: 'power3.out',
+    })
+      .from(
+        '.landing-section-2',
+        {
+          x: -30,
+          opacity: 0,
+          duration: 0.6,
+          ease: 'power2.out',
+        },
+        '-=0.4',
+      )
+      .from(
+        '.social-links a',
+        {
+          scale: 0,
+          opacity: 0,
+          duration: 0.5,
+          stagger: 0.1,
+          ease: 'back.out(1.7)',
+        },
+        '-=0.2',
+      );
+  }
+
   activateMagnet(event: MouseEvent, element: HTMLElement) {
     const bound = element.getBoundingClientRect();
     const centerX = bound.left + bound.width / 2;
