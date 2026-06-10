@@ -128,7 +128,8 @@
         "NAME": "Dieses Feld darf nicht leer sein",
         "SURNAME": "Dieses Feld darf nicht leer sein",
         "EMAIL": "Bitte überprüfen Sie das E-Mail-Format",
-        "MESSAGE": "Dieses Feld darf nicht leer sein"
+        "MESSAGE": "Dieses Feld darf nicht leer sein",
+        "DIRECTION": "Dieses Feld darf nicht leer sein"
       },
       "BUTTON": { "SEND": "Daten senden" }
     },

@@ -127,7 +127,8 @@
         "NAME": "This field cannot be left empty",
         "SURNAME": "This field cannot be left empty",
         "EMAIL": "Check the email format",
-        "MESSAGE": "This field cannot be left empty"
+        "MESSAGE": "This field cannot be left empty",
+        "DIRECTION": "This field cannot be left empty"
       },
       "BUTTON": { "SEND": "Send Data" }
     },

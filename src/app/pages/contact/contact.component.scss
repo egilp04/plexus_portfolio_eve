@@ -49,6 +49,11 @@ h1 {
   font-size: var(--font-button-md);
   cursor: pointer;
 }
+textarea {
+  text-align: start;
+  vertical-align: top;
+  padding: 12px;
+}
 @media (min-width: 480px) {
   h1 {
     font-size: var(--font-h1-md);

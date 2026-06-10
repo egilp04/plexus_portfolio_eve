@@ -128,7 +128,8 @@
         "NAME": "Este campo no se puede quedar vacío",
         "SURNAME": "Este campo no se puede quedar vacío",
         "EMAIL": "Comprueba el formato del email",
-        "MESSAGE": "Este campo no se puede quedar vacío"
+        "MESSAGE": "Este campo no se puede quedar vacío",
+        "DIRECTION": "Este campo no se puede quedar vacío"
       },
       "BUTTON": { "SEND": "Enviar Datos" }
     },
