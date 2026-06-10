@@ -33,38 +33,23 @@ export class AboutComponent implements AfterViewInit {
       this.initEntranceAnimation();
     }
   }
+
   private initEntranceAnimation() {
     const htmlElements = this.items.map((item) => item.nativeElement);
     const tl = gsap.timeline();
-
-    tl.fromTo(
-      '.about-intro',
-      {
-        y: 30,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.4,
-        stagger: 0.2,
-        ease: 'power3.out',
-        delay: 0.5,
-      },
-    ).fromTo(
-      htmlElements,
-      {
-        opacity: 0,
-        x: -30,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 0.8,
-        ease: 'power3.out',
-        stagger: 0.3,
-        clearProps: 'all',
-      },
-    );
+    tl.to('.about-intro', {
+      opacity: 1,
+      y: 0,
+      duration: 0.4,
+      ease: 'power3.out',
+      delay: 0.5,
+    }).to(htmlElements, {
+      opacity: 1,
+      x: 0,
+      duration: 0.8,
+      ease: 'power3.out',
+      stagger: 0.3,
+      clearProps: 'all',
+    });
   }
 }
