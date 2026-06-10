@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { tecnolgiasStack } from '../../models/tecnolgias';
+import { tecnolgiesStack } from '../../models/tecnolgiesStack';
 
 @Component({
   selector: 'app-carrousel',
@@ -9,5 +9,5 @@ import { tecnolgiasStack } from '../../models/tecnolgias';
   styleUrl: './carrousel.component.scss',
 })
 export class CarrouselComponent {
-  @Input() data: tecnolgiasStack[] = [];
+  @Input() data: tecnolgiesStack[] = [];
 }

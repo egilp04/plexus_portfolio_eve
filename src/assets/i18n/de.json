@@ -69,6 +69,10 @@
         "ALL": "Alle"
       },
       "CARDPROJECTS": {
+        "00": {
+          "SUBTITLE": "Anwendung zur Beauftragung von Dienstleistungen",
+          "DESCRIPTION": "Eine digitale Plattform zur Speicherung, Organisation und Verwaltung von Dienstleistungsverträgen zwischen Kunden und Unternehmen."
+        },
         "01": {
           "SUBTITLE": "Verwaltungsanwendung für Mediensammlungen",
           "DESCRIPTION": "Digitale Plattform zur Speicherung, Organisation und Verwaltung von Buch- und Videospielsammlungen. Sie ermöglicht die Erfassung von Titeln, Kategorien und Status und bietet eine intuitive Benutzeroberfläche zur einfachen Verwaltung."

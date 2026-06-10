@@ -11,7 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectChange, MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { TranslateModule } from '@ngx-translate/core';
-import { DatosSelectModel } from '../../models/datosSelectModel';
+import { DataSelectModel } from '../../models/dataSelectModel';
 
 @Component({
   selector: 'app-select-component',
@@ -27,7 +27,7 @@ import { DatosSelectModel } from '../../models/datosSelectModel';
   standalone: true,
 })
 export class SelectComponentComponent {
-  @Input() datos: DatosSelectModel[] = [];
+  @Input() data: DataSelectModel[] = [];
   @Output() selectionChange = new EventEmitter<string>();
   @Input() valorSeleccionado: string = '';
 

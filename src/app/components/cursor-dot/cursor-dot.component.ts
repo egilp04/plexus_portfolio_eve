@@ -33,7 +33,6 @@ export class CursorDotComponent implements AfterViewInit {
     const outlineEl = this.outline()?.nativeElement;
     this.ngZone.runOutsideAngular(() => {
       window.addEventListener('mousemove', (e) => {
-        // El punto sigue al ratón al instante
         gsap.to(dotEl, {
           x: e.clientX,
           y: e.clientY,

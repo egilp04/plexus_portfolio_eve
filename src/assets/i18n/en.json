@@ -69,6 +69,10 @@
         "ALL": "All"
       },
       "CARDPROJECTS": {
+        "00": {
+          "SUBTITLE": "Application to hire services",
+          "DESCRIPTION": "A digital platform designed to store, organise and manage service contracts between customers and businesses."
+        },
         "01": {
           "SUBTITLE": "Media collection management app",
           "DESCRIPTION": "Digital platform designed to store, organize, and manage collections of books and video games. It allows users to register titles, categories, and statuses, providing easy access and control through an intuitive interface."

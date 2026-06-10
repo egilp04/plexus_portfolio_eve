@@ -35,21 +35,21 @@ export class LandingComponent implements AfterViewInit {
     tl.from('.title-container h1', {
       letterSpacing: '10px',
       opacity: 0,
-      duration: 1.2,
+      duration: 0.4,
     })
       .from(' .subtitle, .landing-desc', {
         y: 30,
         opacity: 0,
-        duration: 0.8,
+        duration: 0.6,
         stagger: 0.2,
         ease: 'power3.out',
       })
       .from(
-        '.landing-section-2, .landing-section-3',
+        '.landing-section-2, .landing-section-3, .btn-cv-container',
         {
           x: -30,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.3,
           ease: 'power2.out',
         },
         '-=0.4',

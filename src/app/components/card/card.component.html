@@ -18,13 +18,11 @@
     </div>
   </mat-card-content>
   <mat-card-actions class="card-actions">
-    @if (userService.userSesion()) {
-      <a [href]="project.url" target="_blank" rel="noopener noreferrer">
-        <img src="assets/icons/github.png" alt="GitHub" class="img-url" />
-      </a>
-      <a [href]="project.live" target="_blank" rel="noopener noreferrer">
-        <img src="assets/icons/eye.png" alt="GitHub" class="img-url" />
-      </a>
-    }
+    <a [href]="project.url" target="_blank" rel="noopener noreferrer">
+      <img src="assets/icons/github.png" alt="GitHub" class="img-url" />
+    </a>
+    <a [href]="project.live" target="_blank" rel="noopener noreferrer">
+      <img src="assets/icons/eye.png" alt="GitHub" class="img-url" />
+    </a>
   </mat-card-actions>
 </mat-card>

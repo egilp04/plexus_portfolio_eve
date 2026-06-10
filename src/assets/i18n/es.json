@@ -69,6 +69,10 @@
         "ALL": "Todos"
       },
       "CARDPROJECTS": {
+        "00": {
+          "SUBTITLE": "Aplicación para contratar servicios",
+          "DESCRIPTION": "Plataforma digital diseñada para almacenar, organizar y gestionar contratos de servicios de los clientes a las empresas."
+        },
         "01": {
           "SUBTITLE": "Aplicación de gestión multimedia",
           "DESCRIPTION": "Plataforma digital diseñada para almacenar, organizar y gestionar colecciones de libros y videojuegos. Permite registrar títulos, categorías y estados, facilitando el control y la consulta del contenido desde una interfaz intuitiva."

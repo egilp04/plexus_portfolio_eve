@@ -19,8 +19,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SelectComponentComponent } from '../../components/select-component/select-component.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import datosSelectProject from '../../../assets/data/datosSelectProject.json';
-import { DatosSelectModel } from '../../models/datosSelectModel';
+import dataSelectProject from '../../../assets/data/dataSelectProject.json';
+import { DataSelectModel } from '../../models/dataSelectModel';
 import { ProjectModel } from '../../models/projectModel';
 import { FormsModule } from '@angular/forms';
 import { gsap } from 'gsap';
@@ -42,7 +42,7 @@ export class ProjectComponent implements OnInit {
   private projectService = inject(ProjectsService);
   projectsList = signal<ProjectModel[]>([]);
   @ViewChild('typeFilter') typeFilter!: ElementRef<HTMLSelectElement>;
-  datosSelect: DatosSelectModel[] = datosSelectProject;
+  dataForSelect: DataSelectModel[] = dataSelectProject;
   projectsGrid = viewChild<ElementRef>('projectsGrid');
   name = signal('');
   typeProject = signal('');
@@ -54,23 +54,17 @@ export class ProjectComponent implements OnInit {
     gsap.fromTo(container, { opacity: 0 }, { opacity: 1, duration: 0.5 });
     const tl = gsap.timeline();
     tl.from(cards, {
-      duration: 0.7,
+      duration: 0.8,
       opacity: 0,
       y: 50,
-      stagger: 0.5,
+      stagger: 0.2,
       clearProps: 'all',
     });
   }
-  constructor() {
-    effect(() => {
-      const list = this.filteredProjects();
-      if (list.length > 0) {
-        setTimeout(() => this.animateProjects(), 100);
-      }
-    });
-  }
+  // constructor() {}
   ngOnInit(): void {
     this.getProjects();
+    setTimeout(() => this.animateProjects(), 100);
   }
   getProjects() {
     this.isLoading.set(true);
@@ -79,10 +73,9 @@ export class ProjectComponent implements OnInit {
         this.projectsList.set(data);
         setTimeout(() => {
           this.isLoading.set(false);
-        }, 800);
+        }, 250);
       },
       error: (error) => {
-        console.error('Error:', error);
         this.isLoading.set(false);
       },
     });

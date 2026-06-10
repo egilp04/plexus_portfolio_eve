@@ -7,8 +7,8 @@
     <mat-option value="">{{
       "PAGES.PROJECTS.FILTER.ALL" | translate
     }}</mat-option>
-    @for (dato of datos; track dato) {
-      <mat-option [value]="dato.value">{{ dato.viewValue }}</mat-option>
+    @for (dat of data; track dat) {
+      <mat-option [value]="dat.value">{{ dat.viewValue }}</mat-option>
     }
   </mat-select>
 </mat-form-field>
