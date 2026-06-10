@@ -36,7 +36,6 @@ export class AboutComponent implements AfterViewInit {
   private initEntranceAnimation() {
     const htmlElements = this.items.map((item) => item.nativeElement);
     const tl = gsap.timeline({ delay: 0.5 });
-
     tl.from('.about-intro', {
       y: 30,
       opacity: 0,
