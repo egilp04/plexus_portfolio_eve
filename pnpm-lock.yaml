@@ -38,6 +38,9 @@ importers:
       '@angular/router':
         specifier: 19.2.19
         version: 19.2.19(@angular/common@19.2.19(@angular/core@19.2.19(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@19.2.19(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@19.2.19(@angular/animations@19.2.19(@angular/common@19.2.19(@angular/core@19.2.19(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@19.2.19(rxjs@7.8.2)(zone.js@0.15.1)))(@angular/common@19.2.19(@angular/core@19.2.19(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@19.2.19(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
+      '@emailjs/browser':
+        specifier: ^4.4.1
+        version: 4.4.1
       '@ngx-translate/core':
         specifier: ^17.0.0
         version: 17.0.0(@angular/common@19.2.19(@angular/core@19.2.19(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@19.2.19(rxjs@7.8.2)(zone.js@0.15.1))
@@ -837,6 +840,10 @@ packages:
   '@discoveryjs/json-ext@0.6.3':
     resolution: {integrity: sha512-4B4OijXeVNOPZlYA2oEwWOTkzyltLao+xbotHQeqN++Rv27Y6s818+n2Qkp8q+Fxhn0t/5lA5X1Mxktud8eayQ==}
     engines: {node: '>=14.17.0'}
+
+  '@emailjs/browser@4.4.1':
+    resolution: {integrity: sha512-DGSlP9sPvyFba3to2A50kDtZ+pXVp/0rhmqs2LmbMS3I5J8FSOgLwzY2Xb4qfKlOVHh29EAutLYwe5yuEZmEFg==}
+    engines: {node: '>=14.0.0'}
 
   '@esbuild/aix-ppc64@0.25.4':
     resolution: {integrity: sha512-1VCICWypeQKhVbE9oW/sJaAmjLxhVqacdkvPLEjwlttjfwENRSClS8EjBz0KzRyFSCPDIkuXW34Je/vk7zdB7Q==}
@@ -5630,6 +5637,8 @@ snapshots:
   '@colors/colors@1.5.0': {}
 
   '@discoveryjs/json-ext@0.6.3': {}
+
+  '@emailjs/browser@4.4.1': {}
 
   '@esbuild/aix-ppc64@0.25.4':
     optional: true

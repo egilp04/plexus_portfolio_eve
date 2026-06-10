@@ -41,7 +41,7 @@ export class ContactComponent {
         alert('¡Mensaje enviado con éxito!');
         this.contactForm.reset();
       })
-      .catch((error) => {
+      .catch((error: any) => {
         console.error('ERROR AL ENVIAR...', error);
         alert('Hubo un error al enviar el mensaje. Inténtalo de nuevo.');
       });
