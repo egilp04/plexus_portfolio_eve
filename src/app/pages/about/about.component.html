@@ -1,5 +1,5 @@
 <section class="about">
-  <header class="about-intro" style="opacity: 0; transform: translateY(30px)">
+  <header class="about-intro">
     <h1>{{ "PAGES.ABOUT.TITLE" | translate }}</h1>
     <p>
       {{
@@ -12,11 +12,7 @@
   <div class="timeline-container">
     <div class="timeline">
       @for (key of timelineKeys; track key) {
-        <div
-          class="timeline-item"
-          #timelineItem
-          style="opacity: 0; transform: translateX(-20px)"
-        >
+        <div class="timeline-item" #timelineItem>
           <div class="item-content">
             <span class="date">{{
               "PAGES.ABOUT.TIMELINE." + key + ".DATE" | translate
@@ -27,7 +23,6 @@
       }
     </div>
   </div>
-
   <div class="btn-cv-container">
     <a
       href="assets/docs/cv.pdf"
