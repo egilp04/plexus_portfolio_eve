@@ -38,46 +38,46 @@ export class NavbarComponent implements OnInit {
 
   buildMenu() {
     const baseItems: MenuItem[] = [];
-    if (
-      this.userService.userSesion() &&
-      this.userService.userOfSession()?.rol != 'admin'
-    ) {
-      baseItems.push({
-        label: 'NAV.HOME',
-        routerLink: '/home',
-      });
-    }
+    // if (
+    //   this.userService.userSesion() &&
+    //   this.userService.userOfSession()?.rol != 'admin'
+    // ) {
+    //   baseItems.push({
+    //     label: 'NAV.HOME',
+    //     routerLink: '/home',
+    //   });
+    // }
     baseItems.push(
       { label: 'NAV.ABOUT', routerLink: '/about' },
       { label: 'NAV.CONTACT', routerLink: '/contact' },
       { label: 'NAV.PROJECTS', routerLink: '/projects' },
     );
-    if (!this.userService.userOfSession()) {
-      baseItems.push({
-        label: 'NAV.LOGIN',
-        routerLink: '/login',
-      });
-      baseItems.push({
-        label: 'NAV.REGISTER',
-        routerLink: '/register',
-      });
-    }
-    
-    if (this.userService.userOfSession()?.rol === 'admin') {
-      baseItems.push({
-        label: 'NAV.DASHBOARD_ADMIN',
-        routerLink: '/dashboard',
-      });
-    }
-    if (this.userService.userSesion()) {
-      baseItems.push({
-        label: 'NAV.CLOSESESION',
-        command: () => {
-          this.userService.cerrarSesion();
-          this.router.navigate(['/login']);
-        },
-      });
-    }
+    // if (!this.userService.userOfSession()) {
+    //   baseItems.push({
+    //     label: 'NAV.LOGIN',
+    //     routerLink: '/login',
+    //   });
+    //   baseItems.push({
+    //     label: 'NAV.REGISTER',
+    //     routerLink: '/register',
+    //   });
+    // }
+
+    // if (this.userService.userOfSession()?.rol === 'admin') {
+    //   baseItems.push({
+    //     label: 'NAV.DASHBOARD_ADMIN',
+    //     routerLink: '/dashboard',
+    //   });
+    // }
+    // if (this.userService.userSesion()) {
+    //   baseItems.push({
+    //     label: 'NAV.CLOSESESION',
+    //     command: () => {
+    //       this.userService.cerrarSesion();
+    //       this.router.navigate(['/login']);
+    //     },
+    //   });
+    // }
     this.items = baseItems;
   }
 }

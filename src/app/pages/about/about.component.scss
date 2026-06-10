@@ -80,24 +80,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 100px;
+}
+.cv-download-btn {
+  font-family: var(--font-Poppins);
+  font-weight: var(--font-weight-medium);
+  background-color: var(--color-primary);
+  padding: var(--padding-12) var(--padding-48);
+  font-size: var(--font-button-lg);
+  color: var(--color-base);
+  border-radius: var(--border-radius);
+  border: none;
 }
 
-.cv-download-btn {
-  font-size: var(--font-but);
-  box-shadow: 0 4px 15px var(--color-primary);
-  transition: all 0.3s ease;
-  padding: var(--padding-10) var(--padding-30);
-  border-radius: var(--border-radius-input);
-  border: none;
-  background-color: var(--color-primary);
-  color: var(--color-base);
-  font-size: var(--font-button-md);
+.cv-download-btn:hover {
   cursor: pointer;
+  background-color: var(--color-secondary);
+}
 
-  &:hover {
-    transform: scale(1.05) translateY(-2px);
-    box-shadow: 0 6px 20px rgba(139, 41, 117, 0.6);
-  }
+.cv-download-btn:disabled {
+  background-color: var(--color-disabled);
+  cursor: not-allowed;
 }
 
 @media (min-width: 480px) {

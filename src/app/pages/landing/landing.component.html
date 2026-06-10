@@ -10,7 +10,26 @@
     <section class="landing-section-2">
       <app-navbar></app-navbar>
     </section>
+    <section class="btn-cv-container">
+      <a
+        href="assets/docs/cv.pdf"
+        download="Nombre_Apellido_CV.pdf"
+        mat-raised-button
+        class="cv-download-btn"
+      >
+        {{ "PAGES.HOME.DOWNLOAD_CV" | translate }}
+      </a>
+      <a
+        href="assets/docs/cv_tenico.pdf"
+        download="Nombre_Apellido_CV.pdf"
+        mat-raised-button
+        class="cv-download-btn"
+      >
+        {{ "PAGES.HOME.DOWNLOAD_CV_TECH" | translate }}
+      </a>
+    </section>
   </div>
+
   <section class="landing-section-3 social-links">
     <a
       #github
